@@ -1,0 +1,15 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{% if page.title %}{{page.title}} | {% endif %}Noah Liebman</title>
+
+    <link href="/{{site.baseurl}}styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/{{site.baseurl}}styles/960.css" rel="stylesheet" type="text/css" />
+    <link href="/{{site.baseurl}}styles/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{site.baseurl}}/feed/" />
+    <!--<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="{{site.baseurl}}feed/atom/" />-->
+
+    <script src="{{site.assets}}/modernizr-2.5.3.min.js"></script>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>

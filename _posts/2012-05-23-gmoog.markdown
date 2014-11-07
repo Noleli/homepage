@@ -1,0 +1,15 @@
+---
+comments: true
+date: 2012-05-23 15:40:03
+slug: gmoog
+title: gMoog
+wordpress_id: 519
+categories:
+- audio
+- Big tweets
+- Music
+---
+
+I'll admit it: hearing about today's [Google Doodle](http://www.google.com/doodles/) [Moog synth](https://en.wikipedia.org/wiki/Moog_synthesizer) pulled me in from [DuckDuckGo](https://duckduckgo.com/). After messing around a bit this morning, I think I've figured out all the knobs in the Oscillators section. I'm hoping to figure out the details of the other sections later.
+
+Basically, there are three oscillators. The two big knobs control the tuning offset from the primary (i.e. nonadjustable) oscillator. The three knobs on the left control the octave of the fundamental of each of the three (measured in feet as a reference to tube length in an organ, I'm assuming); the knobs on the right switch the shape of the wave (sawtooth, square, etc.) of each oscillator, affecting the harmonic structure.

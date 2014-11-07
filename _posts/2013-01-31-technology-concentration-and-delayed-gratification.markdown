@@ -1,0 +1,13 @@
+---
+title: Technology, concentration, and delayed gratification
+---
+
+Yesterday I received the following email from a friend who has been babysitting for her younger cousins while their parents are out of town.
+
+> I'd like to take this opportunity to be grateful that I was not born a few years later, so as a student my will to do homework was not undermined by portable technology: when I was 13, I had to use a desktop computer to procrastinate and play online, instant messaging, etc. No privacy, the chair wasn't comfy --- it was the best I had. My 13-year-old cousin has been struggling to write a PARAGRAPH for a paper for almost a week. His mother instructed me to take away his iPhone, so he couldn't play games on it instead of work. He didn't fight me, returned to his room and played on his tablet instead. When I took that away a few days ago, he produced a second tablet. I confiscated that today. He has now written 6 sentences, and I'm feel disproportionately proud.
+
+> Technology (and parents who provide it so lavishly!) is making concentration even harder, and ADD does not need this kind of help. Oy.
+
+As someone who struggled (and continues to struggle) with concentration, I had no problem as a kid not getting work done, but rather than blame technology, I had no one to blame but myself: I was (am…?) the world champion at staring off into space. For me, an important life lesson was that if I did my work now --- and I mean really sat down and tried *hard* to do it now --- I could do other things later. It was [Parkinson's Law](http://en.wikipedia.org/wiki/Parkinson%27s_law). I put it into effect in high school by signing up for as many extracurricular activities as I could, which forced me to do my work more efficiently. I did it through college, and while the workload in grad school is much more unevenly distributed over time, I still attempt to keep myself busy. If I don't, I'll procrastinate until the end of time.
+
+This has nothing to do with technology, though, and everything to do with behavioral psychology. People are bad at [intertemporal choice](http://en.wikipedia.org/wiki/Intertemporal_choice). We hate delayed gratification, but part of growing up is learning how to live with it: we can't do the fun things *right now* all of the time. That is the lesson parents should be teaching their children. If a kid (or adult) doesn't want to do something, they will always find a way to avoid it. Technology might make finding distractions easier, but ultimately the agency lies with us, not our toys.

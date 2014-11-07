@@ -1,0 +1,18 @@
+  <div class="container_12">
+    
+    
+
+    <div class="grid_3 push_9">
+          {% include sidebar.html %}
+        </div><!-- end grid_3 -->
+        <!--  -->
+        {% if page.wide %}
+        <div class="grid_9 pull_3">
+        {% else %}
+        <div class="grid_8 suffix_1 pull_3">
+        {% endif %}
+          <div id="content_area">
+            <div id="head">
+              <h1><a href="{{site.url}}" title="Noah Liebman" rel="home">Noah Liebman</a></h1>
+              {% include mainmenu.html %}
+            </div><!-- end head -->

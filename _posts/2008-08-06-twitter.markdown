@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2008-08-06 22:49:30
+slug: twitter
+title: Twitter...
+wordpress_id: 64
+categories:
+- Information
+tags:
+- Twitter
+- useless
+---
+
+I am now on Twitter as [Noleli](https://twitter.com/Noleli). Truly, I have no idea why.

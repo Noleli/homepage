@@ -1,0 +1,40 @@
+{% assign menupage = "" %}
+{% if page.menupage == null or page.menupage == "bigtweets" %}
+	{% if page.title == "About" %}
+		{% assign menupage = "about" %}
+	{% elsif page.categories contains "big-tweets" or page.menupage == "bigtweets" %}
+		{% assign menupage = "bigtweets" %}
+	{% else %}
+		{% assign menupage = "blog" %}
+	{% endif %}
+{% else %}
+	{% assign menupage = page.menupage %}
+{% endif %}
+
+
+<ul id="main-menu" class="menu">
+	<li{% if menupage == "blog" %} class="active"{% endif %}>
+		<a href="/{{site.baseurl}}">Blog</a>
+	</li>
+	<li{% if menupage == "about" %} class="active"{% endif %}>
+		<a href="/{{site.baseurl}}about/">About</a>
+	</li>
+	<li{% if page.menupage == "research" %} class="active"{% endif %}>
+		<a href="/{{site.baseurl}}research-projects/">Research &amp; Projects</a>
+	</li>
+	<!--<li{% if menupage == "bigtweets" %} class="active"{% endif %}>
+		<a href="{{site.baseurl}}big-tweets/">Big Tweets</a>
+	</li>-->
+	<li{% if page.menupage == "resume" %} class="active"{% endif %}>
+		<a href="/NoahLiebmanResume.pdf">Résumé</a>
+	</li>
+</ul>
+
+{% if page.menupage == "research" %}
+<!--<ul id="sub-menu" class="menu">
+	<li{% if page.submenupage == "cuebert" %} class="active"{% endif %}><a href="{{site.baseurl}}research-projects/cuebert/">Cuebert</a></li>
+	<li{% if page.submenupage == "treasurehunter" %} class="active"{% endif %}><a href="{{site.baseurl}}research-projects/treasurehunter/">TreasureHunter</a></li>
+	<li{% if page.submenupage == "friendenstein" %} class="active"{% endif %}><a href="{{site.baseurl}}research-projects/friendenstein/">Friendenstein</a></li>
+	<li{% if page.submenupage == "other-fun-stuff" %} class="active"{% endif %}><a href="{{site.baseurl}}research-projects/other-fun-stuff/">Other fun stuff</a></li>
+</ul>-->
+{% endif %}
