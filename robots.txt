@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: NoahLiebmanResume.pdf
+Disallow: /pages/hypos.html
+
+User-agent: Googlebot-Image
+Disallow: /post-uploads/
