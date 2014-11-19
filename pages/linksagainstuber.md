@@ -10,6 +10,8 @@ I've started collecting a list of links about why Uber and its ilk are problemat
 - [Four Things About Uber You Wish You Never Knew](https://www.youtube.com/watch?v=XT8Kv7Et0OI) (video)
 - [Uber and Its Shady Partners Are Pushing Drivers into Subprime Loans](http://valleywag.gawker.com/uber-and-its-shady-partners-are-pushing-drivers-into-su-1649936785)
 - [Uber Gave Contractors Burner Phones And Credit Cards To Create Fake Lyft Accounts And Recruit Drivers](http://techcrunch.com/2014/08/26/uber-lyft-operation-slog/)
+- [In Search of Uber’s Unicorn](http://www.slate.com/articles/business/moneybox/2014/10/uber_driver_salary_the_ride_sharing_company_says_its_drivers_make_great.html)
+- [Sexist French Uber Promotion Pairs Riders With “Hot Chick” Drivers](http://www.buzzfeed.com/charliewarzel/french-uber-bird-hunting-promotion-pairs-lyon-riders-with-a)
 - [Uber Executive Suggests Digging Up Dirt On Journalists](http://www.buzzfeed.com/bensmith/uber-executive-suggests-digging-up-dirt-on-journalists)
 - [Uber Seeks Changes To Wheelchair-Accessible Taxi Bill](http://wamu.org/news/14/11/18/uber_seeks_changes_to_wheelchair_accessible_taxi_bill)
 - [The horrific trickle down of Asshole culture: Why I’ve just deleted Uber from my phone](http://pando.com/2014/10/22/the-horrific-trickle-down-of-asshole-culture-at-a-company-like-uber/)
@@ -19,3 +21,4 @@ I've started collecting a list of links about why Uber and its ilk are problemat
 - [Uber's vast trove of customer data is ripe for abuse](http://www.vox.com/2014/11/18/7243093/uber-privacy-problems)
 - [Uber Gets Failing Grade From Better Business Bureau](http://www.huffingtonpost.com/2014/10/11/uber-better-business-bureau-f-rating_n_5969894.html)
 - [Uber has an asshole problem](http://www.vox.com/2014/11/18/7240295/uber-privacy)
+- [The moment I learned just how far Uber will go to silence journalists and attack women](http://pando.com/2014/11/17/the-moment-i-learned-just-how-far-uber-will-go-to-silence-journalists-and-attack-women/)
