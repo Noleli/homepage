@@ -22,3 +22,6 @@ I've started collecting a list of links about why Uber and its ilk are problemat
 - [Uber Gets Failing Grade From Better Business Bureau](http://www.huffingtonpost.com/2014/10/11/uber-better-business-bureau-f-rating_n_5969894.html)
 - [Uber has an asshole problem](http://www.vox.com/2014/11/18/7240295/uber-privacy)
 - [The moment I learned just how far Uber will go to silence journalists and attack women](http://pando.com/2014/11/17/the-moment-i-learned-just-how-far-uber-will-go-to-silence-journalists-and-attack-women/)
+- [Uber’s Rough Ride](http://www.nytimes.com/2014/11/22/opinion/joe-nocera-ubers-rough-ride.html?_r=1)
+- [On stage at Goldman Sachs event, Uber CEO compared his company’s woes to Ferguson](http://pando.com/2014/11/20/on-stage-at-goldman-sachs-event-travis-kalanick-compared-his-companys-woes-to-ferguson/)
+- [Uber hit with lawsuit over use of credit scores in driver hiring](https://gigaom.com/2014/11/25/uber-hit-with-lawsuit-over-use-of-credit-scores-in-driver-hiring/)
