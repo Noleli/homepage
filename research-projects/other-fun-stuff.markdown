@@ -1,6 +1,5 @@
 ---
 title: Other fun stuff
-layout: default
 menupage: research
 submenupage: other-fun-stuff
 permalink: /research-projects/other-fun-stuff/

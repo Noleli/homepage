@@ -1,6 +1,5 @@
 ---
 title: Friendenstein
-layout: default
 menupage: research
 submenupage: friendenstein
 permalink: /research-projects/friendenstein/
@@ -8,7 +7,7 @@ permalink: /research-projects/friendenstein/
 
 ### A Facebook game to encourage reduced energy consumption through social incentives, using computer idle time as a verifiable proxy
 
-[Final report.](http://powerofoff.org/2010/04/friendenstein-final-yay/)
+[Final report.](http://projects.noahliebman.net/friendenstein/2010/04/friendenstein-final-yay/)
 {: style="padding-left: 30px"}
 
 ![Screenshot]({{site.baseurl}}/post-uploads/friendenstein_screen.png){: style="padding-left: 30px"}
