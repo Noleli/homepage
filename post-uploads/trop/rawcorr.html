@@ -1,0 +1,878 @@
+<!doctype html>
+<html>
+<head>
+  <title>Trop co-occurrence correlation table</title>
+<style>
+<!--
+  body {
+    font-family: sans-serif;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 3px;
+    vertical-align: middle;
+  }
+  th {
+    text-align: right;
+  }
+  #head th {
+    text-align: center;
+  }
+  td {
+    text-align: right;
+  }
+-->
+</style>
+</head>
+
+<body>
+
+<p><a href="rawcorr.csv">CSV</a></p>
+<table>
+ <tr id='head'>
+  <th></th>
+  <th>darga</th>
+  <th>etnakhta</th>
+  <th>gadol</th>
+  <th>geresh</th>
+  <th>gereshmukdam</th>
+  <th>gershayim</th>
+  <th>kadma</th>
+  <th>karnepara</th>
+  <th>katan</th>
+  <th>mapakh</th>
+  <th>merkha</th>
+  <th>merkhakfula</th>
+  <th>munakh</th>
+  <th>pashta</th>
+  <th>pazer</th>
+  <th>revii</th>
+  <th>segol</th>
+  <th>shalshelet</th>
+  <th>sofpasuk</th>
+  <th>telishagedola</th>
+  <th>telishaketana</th>
+  <th>tevir</th>
+  <th>tipkha</th>
+  <th>tsinnorit</th>
+  <th>yerakhbenyomo</th>
+  <th>yetiv</th>
+  <th>zarka</th>
+ </tr>
+ <tr>
+  <th>darga</th>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF0F3'>-0.005543751</td>
+  <td style='background:#FAD6D9'>-0.05827346</td>
+  <td style='background:#F2F5FC'>0.0831286</td>
+  <td style='background:#FBF0F2'>-0.00579828</td>
+  <td style='background:#EBF0F9'>0.122619338</td>
+  <td style='background:#E5ECF7'>0.1625131</td>
+  <td style='background:#FBF0F2'>-0.00579828</td>
+  <td style='background:#F98F91'>-0.205878861</td>
+  <td style='background:#FAC4C7'>-0.095778347</td>
+  <td style='background:#FBDDDF'>-0.04495013</td>
+  <td style='background:#F6F8FD'>0.056610544</td>
+  <td style='background:#FBDCDF'>-0.0452197</td>
+  <td style='background:#F9A3A6'>-0.162862051</td>
+  <td style='background:#F8FAFE'>0.043975638</td>
+  <td style='background:#F9FAFE'>0.039248976</td>
+  <td style='background:#FBEDF0'>-0.01056699</td>
+  <td style='background:#FBEDF0'>-0.011599534</td>
+  <td style='background:#FBFBFE'>0.018196268</td>
+  <td style='background:#EEF2FA'>0.105223257</td>
+  <td style='background:#F3F6FC'>0.074889792</td>
+  <td style='background:#A4BEE0'>0.557802693</td>
+  <td style='background:#FBEFF2'>-0.00722024</td>
+  <td style='background:#FCFCFF'>0.021027526</td>
+  <td style='background:#FBF0F2'>-0.00579828</td>
+  <td style='background:#FBDFE2'>-0.039583964</td>
+  <td style='background:#FBECEF'>-0.013394309</td>
+ </tr>
+ <tr>
+  <th>etnakhta</th>
+  <td style='background:#FBF0F3'>-0.005543751</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#F9FAFE'>0.042309697</td>
+  <td style='background:#F1F5FC'>0.08691734</td>
+  <td style='background:#FBF4F7'>0.00331306</td>
+  <td style='background:#FAFBFF'>0.032638827</td>
+  <td style='background:#EEF3FB'>0.1043428</td>
+  <td style='background:#FBF4F7'>0.00331306</td>
+  <td style='background:#D1DEF0'>0.279664258</td>
+  <td style='background:#E2EAF6'>0.18182346</td>
+  <td style='background:#F4F6FC'>0.072815676</td>
+  <td style='background:#FBF6F9'>0.00741076</td>
+  <td style='background:#D4E0F1'>0.263136375</td>
+  <td style='background:#D5E1F2'>0.256095606</td>
+  <td style='background:#FBF4F7'>0.003541469</td>
+  <td style='background:#EAEFF9'>0.133740139</td>
+  <td style='background:#F5F7FD'>0.066027221</td>
+  <td style='background:#FBF6F8'>0.006627819</td>
+  <td style='background:#F7F8FD'>0.054871206</td>
+  <td style='background:#FAFBFF'>0.031325096</td>
+  <td style='background:#F9FAFE'>0.041672337</td>
+  <td style='background:#F9FAFE'>0.039412357</td>
+  <td style='background:#6A95CC'>0.907753449</td>
+  <td style='background:#FBF7FA'>0.010484881</td>
+  <td style='background:#FBF4F7'>0.00331306</td>
+  <td style='background:#F5F8FD'>0.06161635</td>
+  <td style='background:#F5F7FD'>0.064795802</td>
+ </tr>
+ <tr>
+  <th>gadol</th>
+  <td style='background:#FAD6D9'>-0.05827346</td>
+  <td style='background:#F9FAFE'>0.042309697</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBEAED'>-0.01748288</td>
+  <td style='background:#FBF0F3'>-0.003822858</td>
+  <td style='background:#FBE5E7'>-0.028284387</td>
+  <td style='background:#FBE9EB'>-0.020120536</td>
+  <td style='background:#FBF0F3'>-0.003822858</td>
+  <td style='background:#FBDEE0'>-0.042828541</td>
+  <td style='background:#FBDFE2'>-0.039241654</td>
+  <td style='background:#FBE0E3'>-0.03720317</td>
+  <td style='background:#FBEEF1'>-0.008551092</td>
+  <td style='background:#FBDDE0'>-0.043112785</td>
+  <td style='background:#FBE4E6'>-0.030282507</td>
+  <td style='background:#FBFAFD'>0.015428249</td>
+  <td style='background:#FBE4E7'>-0.029000952</td>
+  <td style='background:#FCFCFF'>0.021806977</td>
+  <td style='background:#FBF9FC'>0.013626966</td>
+  <td style='background:#FCFCFF'>0.019908426</td>
+  <td style='background:#FBF0F3'>-0.005601871</td>
+  <td style='background:#FBF3F6'>0.001699665</td>
+  <td style='background:#FACCCF'>-0.078933372</td>
+  <td style='background:#F9FAFE'>0.041797442</td>
+  <td style='background:#FBF9FC'>0.014826099</td>
+  <td style='background:#FBF0F3'>-0.003822858</td>
+  <td style='background:#FBEBEE'>-0.01554073</td>
+  <td style='background:#FBFBFE'>0.01868592</td>
+ </tr>
+ <tr>
+  <th>geresh</th>
+  <td style='background:#F2F5FC'>0.0831286</td>
+  <td style='background:#F1F5FC'>0.08691734</td>
+  <td style='background:#FBEAED'>-0.01748288</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBEFF2'>-0.005827843</td>
+  <td style='background:#FBF1F4'>-0.003305283</td>
+  <td style='background:#8FAFD9'>0.681780271</td>
+  <td style='background:#FCFCFF'>0.024682321</td>
+  <td style='background:#E9EFF9'>0.13542806</td>
+  <td style='background:#E1E9F6'>0.185920119</td>
+  <td style='background:#FBFCFF'>0.025271599</td>
+  <td style='background:#FBFBFF'>0.027911769</td>
+  <td style='background:#D6E1F2'>0.253885274</td>
+  <td style='background:#E0E8F5'>0.192621336</td>
+  <td style='background:#D7E2F2'>0.245768641</td>
+  <td style='background:#BFD1EA'>0.390144181</td>
+  <td style='background:#EDF2FA'>0.112690208</td>
+  <td style='background:#FBF4F7'>0.00360032</td>
+  <td style='background:#FBEDF0'>-0.010843543</td>
+  <td style='background:#E5ECF7'>0.163732313</td>
+  <td style='background:#B5CAE6'>0.453408134</td>
+  <td style='background:#EEF2FA'>0.106944803</td>
+  <td style='background:#F1F5FC'>0.087090417</td>
+  <td style='background:#FBFBFF'>0.029834499</td>
+  <td style='background:#FCFCFF'>0.024682321</td>
+  <td style='background:#F9FAFE'>0.041440325</td>
+  <td style='background:#EDF2FA'>0.111625658</td>
+ </tr>
+ <tr>
+  <th>gereshmukdam</th>
+  <td style='background:#FBF0F2'>-0.00579828</td>
+  <td style='background:#FBF4F7'>0.00331306</td>
+  <td style='background:#FBF0F3'>-0.003822858</td>
+  <td style='background:#FBEFF2'>-0.005827843</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF0F3'>-0.003906659</td>
+  <td style='background:#FBEFF1'>-0.007809053</td>
+  <td style='background:#FBF2F5'>-0.000170882</td>
+  <td style='background:#FBF8FB'>0.011578558</td>
+  <td style='background:#FBFBFF'>0.029327265</td>
+  <td style='background:#FBF5F8'>0.006332272</td>
+  <td style='background:#FBF2F5'>-0.000382234</td>
+  <td style='background:#FBEFF2'>-0.005971775</td>
+  <td style='background:#FBFAFD'>0.016532353</td>
+  <td style='background:#FBF1F4'>-0.002091814</td>
+  <td style='background:#FBEEF1'>-0.00913294</td>
+  <td style='background:#FBF1F4'>-0.003405567</td>
+  <td style='background:#FBF2F5'>-0.000341851</td>
+  <td style='background:#FBF3F6'>0.000889907</td>
+  <td style='background:#FBF1F4'>-0.002783675</td>
+  <td style='background:#FBF1F3'>-0.003721634</td>
+  <td style='background:#FBEEF0'>-0.009918879</td>
+  <td style='background:#FBF4F7'>0.003667263</td>
+  <td style='background:#FBF2F5'>-0.000540792</td>
+  <td style='background:#FBF2F5'>-0.000170882</td>
+  <td style='background:#FBF1F4'>-0.003178062</td>
+  <td style='background:#FBF1F4'>-0.003342052</td>
+ </tr>
+ <tr>
+  <th>gershayim</th>
+  <td style='background:#EBF0F9'>0.122619338</td>
+  <td style='background:#FAFBFF'>0.032638827</td>
+  <td style='background:#FBE5E7'>-0.028284387</td>
+  <td style='background:#FBF1F4'>-0.003305283</td>
+  <td style='background:#FBF0F3'>-0.003906659</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FCFCFF'>0.018953656</td>
+  <td style='background:#F9FAFE'>0.040927996</td>
+  <td style='background:#F4F6FC'>0.072785069</td>
+  <td style='background:#E7EDF8'>0.151691729</td>
+  <td style='background:#FBFBFF'>0.029346468</td>
+  <td style='background:#FBEEF1'>-0.008738542</td>
+  <td style='background:#E3EBF7'>0.170918047</td>
+  <td style='background:#EBF0F9'>0.126301414</td>
+  <td style='background:#FBEEF0'>-0.009852898</td>
+  <td style='background:#DFE8F5'>0.198112067</td>
+  <td style='background:#F0F3FB'>0.097485337</td>
+  <td style='background:#FBEFF1'>-0.007815321</td>
+  <td style='background:#FBF4F7'>0.00304951</td>
+  <td style='background:#F7F9FE'>0.050394091</td>
+  <td style='background:#FBEBEE'>-0.014727273</td>
+  <td style='background:#EDF2FA'>0.110572234</td>
+  <td style='background:#FBFBFF'>0.030261166</td>
+  <td style='background:#FBFBFF'>0.030203182</td>
+  <td style='background:#F9FAFE'>0.040927996</td>
+  <td style='background:#FBF7FA'>0.00932212</td>
+  <td style='background:#F0F4FB'>0.094162513</td>
+ </tr>
+ <tr>
+  <th>kadma</th>
+  <td style='background:#E5ECF7'>0.1625131</td>
+  <td style='background:#EEF3FB'>0.1043428</td>
+  <td style='background:#FBE9EB'>-0.020120536</td>
+  <td style='background:#8FAFD9'>0.681780271</td>
+  <td style='background:#FBEFF1'>-0.007809053</td>
+  <td style='background:#FCFCFF'>0.018953656</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FAFAFE'>0.036245298</td>
+  <td style='background:#E3EAF6'>0.17474321</td>
+  <td style='background:#D6E2F2'>0.250880282</td>
+  <td style='background:#F6F8FD'>0.059087125</td>
+  <td style='background:#FBF3F6'>0.002240897</td>
+  <td style='background:#DBE5F4'>0.224524245</td>
+  <td style='background:#DDE6F4'>0.212037943</td>
+  <td style='background:#D9E4F3'>0.233403195</td>
+  <td style='background:#CAD9EE'>0.323859802</td>
+  <td style='background:#E5ECF7'>0.160630524</td>
+  <td style='background:#FBF0F3'>-0.0046057</td>
+  <td style='background:#FBF3F6'>0.002430249</td>
+  <td style='background:#D9E4F3'>0.231614142</td>
+  <td style='background:#B4CAE6'>0.457346332</td>
+  <td style='background:#E3EBF7'>0.173828927</td>
+  <td style='background:#EEF2FA'>0.107264648</td>
+  <td style='background:#F8F9FE'>0.044996264</td>
+  <td style='background:#FAFAFE'>0.036245298</td>
+  <td style='background:#FBF9FC'>0.014719308</td>
+  <td style='background:#E6EDF8'>0.155324949</td>
+ </tr>
+ <tr>
+  <th>karnepara</th>
+  <td style='background:#FBF0F2'>-0.00579828</td>
+  <td style='background:#FBF4F7'>0.00331306</td>
+  <td style='background:#FBF0F3'>-0.003822858</td>
+  <td style='background:#FCFCFF'>0.024682321</td>
+  <td style='background:#FBF2F5'>-0.000170882</td>
+  <td style='background:#F9FAFE'>0.040927996</td>
+  <td style='background:#FAFAFE'>0.036245298</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF1F4'>-0.002788476</td>
+  <td style='background:#FBEDF0'>-0.010306187</td>
+  <td style='background:#FBF5F8'>0.006332272</td>
+  <td style='background:#FBF2F5'>-0.000382234</td>
+  <td style='background:#F9FAFE'>0.042600767</td>
+  <td style='background:#FBEBEE'>-0.014313634</td>
+  <td style='background:#FBF1F4'>-0.002091814</td>
+  <td style='background:#FAFBFF'>0.034718658</td>
+  <td style='background:#FBF1F4'>-0.003405567</td>
+  <td style='background:#FBF2F5'>-0.000341851</td>
+  <td style='background:#FBF3F6'>0.000889907</td>
+  <td style='background:#FBF1F4'>-0.002783675</td>
+  <td style='background:#F8FAFE'>0.043838902</td>
+  <td style='background:#FBF8FB'>0.011767784</td>
+  <td style='background:#FBF4F7'>0.003667263</td>
+  <td style='background:#FBF2F5'>-0.000540792</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#F8F9FE'>0.04907249</td>
+  <td style='background:#FBF1F4'>-0.003342052</td>
+ </tr>
+ <tr>
+  <th>katan</th>
+  <td style='background:#F98F91'>-0.205878861</td>
+  <td style='background:#D1DEF0'>0.279664258</td>
+  <td style='background:#FBDEE0'>-0.042828541</td>
+  <td style='background:#E9EFF9'>0.13542806</td>
+  <td style='background:#FBF8FB'>0.011578558</td>
+  <td style='background:#F4F6FC'>0.072785069</td>
+  <td style='background:#E3EAF6'>0.17474321</td>
+  <td style='background:#FBF1F4'>-0.002788476</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#A5BFE1'>0.548023838</td>
+  <td style='background:#FABFC2'>-0.10584472</td>
+  <td style='background:#FBF6F8'>0.006617306</td>
+  <td style='background:#A5BFE1'>0.551853676</td>
+  <td style='background:#7CA2D2'>0.799048151</td>
+  <td style='background:#FAFBFF'>0.032231893</td>
+  <td style='background:#D1DEF0'>0.284660067</td>
+  <td style='background:#F1F5FC'>0.086051039</td>
+  <td style='background:#FBF7FA'>0.008792336</td>
+  <td style='background:#FCFCFF'>0.022834941</td>
+  <td style='background:#F8FAFE'>0.044189341</td>
+  <td style='background:#F3F6FC'>0.073857625</td>
+  <td style='background:#F8696B'>-0.284285143</td>
+  <td style='background:#D3E0F1'>0.268018296</td>
+  <td style='background:#FBF2F5'>0.000268781</td>
+  <td style='background:#FBF1F4'>-0.002788476</td>
+  <td style='background:#DCE6F4'>0.213837116</td>
+  <td style='background:#F1F5FC'>0.085571937</td>
+ </tr>
+ <tr>
+  <th>mapakh</th>
+  <td style='background:#FAC4C7'>-0.095778347</td>
+  <td style='background:#E2EAF6'>0.18182346</td>
+  <td style='background:#FBDFE2'>-0.039241654</td>
+  <td style='background:#E1E9F6'>0.185920119</td>
+  <td style='background:#FBFBFF'>0.029327265</td>
+  <td style='background:#E7EDF8'>0.151691729</td>
+  <td style='background:#D6E2F2'>0.250880282</td>
+  <td style='background:#FBEDF0'>-0.010306187</td>
+  <td style='background:#A5BFE1'>0.548023838</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBEFF2'>-0.005805893</td>
+  <td style='background:#FBF8FB'>0.012408143</td>
+  <td style='background:#D5E1F2'>0.258644544</td>
+  <td style='background:#8EAFD9'>0.687848096</td>
+  <td style='background:#F8F9FE'>0.046240241</td>
+  <td style='background:#DFE8F5'>0.198121676</td>
+  <td style='background:#F0F4FB'>0.091867017</td>
+  <td style='background:#FBF2F5'>-0.000795853</td>
+  <td style='background:#FBF4F7'>0.003982878</td>
+  <td style='background:#F1F5FC'>0.086523959</td>
+  <td style='background:#EEF2FA'>0.109127422</td>
+  <td style='background:#FABEC0'>-0.108384339</td>
+  <td style='background:#E3EBF7'>0.173815933</td>
+  <td style='background:#FCFCFF'>0.023826695</td>
+  <td style='background:#FBEDF0'>-0.010306187</td>
+  <td style='background:#FBDEE1'>-0.041562256</td>
+  <td style='background:#F1F5FC'>0.087253618</td>
+ </tr>
+ <tr>
+  <th>merkha</th>
+  <td style='background:#FBDDDF'>-0.04495013</td>
+  <td style='background:#F4F6FC'>0.072815676</td>
+  <td style='background:#FBE0E3'>-0.03720317</td>
+  <td style='background:#FBFCFF'>0.025271599</td>
+  <td style='background:#FBF5F8'>0.006332272</td>
+  <td style='background:#FBFBFF'>0.029346468</td>
+  <td style='background:#F6F8FD'>0.059087125</td>
+  <td style='background:#FBF5F8'>0.006332272</td>
+  <td style='background:#FABFC2'>-0.10584472</td>
+  <td style='background:#FBEFF2'>-0.005805893</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBEDF0'>-0.011433066</td>
+  <td style='background:#FBEDF0'>-0.010314817</td>
+  <td style='background:#FBD9DC'>-0.051255581</td>
+  <td style='background:#FBF7FA'>0.01033664</td>
+  <td style='background:#F7F9FE'>0.051506349</td>
+  <td style='background:#FBFCFF'>0.026574045</td>
+  <td style='background:#FBFCFF'>0.026975893</td>
+  <td style='background:#FBECEF'>-0.01366361</td>
+  <td style='background:#FCFCFF'>0.019993513</td>
+  <td style='background:#F8F9FE'>0.046762396</td>
+  <td style='background:#D1DEF0'>0.284124791</td>
+  <td style='background:#F0F4FB'>0.09487712</td>
+  <td style='background:#FCFCFF'>0.02456676</td>
+  <td style='background:#FBF5F8'>0.006332272</td>
+  <td style='background:#FBE3E6'>-0.031689661</td>
+  <td style='background:#FCFCFF'>0.021904055</td>
+ </tr>
+ <tr>
+  <th>merkhakfula</th>
+  <td style='background:#F6F8FD'>0.056610544</td>
+  <td style='background:#FBF6F9'>0.00741076</td>
+  <td style='background:#FBEEF1'>-0.008551092</td>
+  <td style='background:#FBFBFF'>0.027911769</td>
+  <td style='background:#FBF2F5'>-0.000382234</td>
+  <td style='background:#FBEEF1'>-0.008738542</td>
+  <td style='background:#FBF3F6'>0.002240897</td>
+  <td style='background:#FBF2F5'>-0.000382234</td>
+  <td style='background:#FBF6F8'>0.006617306</td>
+  <td style='background:#FBF8FB'>0.012408143</td>
+  <td style='background:#FBEDF0'>-0.011433066</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF4F7'>0.004025921</td>
+  <td style='background:#FBFAFD'>0.016280913</td>
+  <td style='background:#FBF0F3'>-0.004679037</td>
+  <td style='background:#FBF7FA'>0.008997747</td>
+  <td style='background:#FBEFF2'>-0.007617683</td>
+  <td style='background:#FBF2F5'>-0.000764664</td>
+  <td style='background:#FBF3F6'>0.001990572</td>
+  <td style='background:#F8F9FE'>0.047965765</td>
+  <td style='background:#FBEEF1'>-0.008324673</td>
+  <td style='background:#FBE8EA'>-0.022186871</td>
+  <td style='background:#FBF6F9'>0.008203053</td>
+  <td style='background:#FBF2F5'>-0.00120966</td>
+  <td style='background:#FBF2F5'>-0.000382234</td>
+  <td style='background:#FBEFF2'>-0.007108792</td>
+  <td style='background:#FBEFF2'>-0.007475612</td>
+ </tr>
+ <tr>
+  <th>munakh</th>
+  <td style='background:#FBDCDF'>-0.0452197</td>
+  <td style='background:#D4E0F1'>0.263136375</td>
+  <td style='background:#FBDDE0'>-0.043112785</td>
+  <td style='background:#D6E1F2'>0.253885274</td>
+  <td style='background:#FBEFF2'>-0.005971775</td>
+  <td style='background:#E3EBF7'>0.170918047</td>
+  <td style='background:#DBE5F4'>0.224524245</td>
+  <td style='background:#F9FAFE'>0.042600767</td>
+  <td style='background:#A5BFE1'>0.551853676</td>
+  <td style='background:#D5E1F2'>0.258644544</td>
+  <td style='background:#FBEDF0'>-0.010314817</td>
+  <td style='background:#FBF4F7'>0.004025921</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#B6CBE7'>0.444879649</td>
+  <td style='background:#E4EBF7'>0.169221538</td>
+  <td style='background:#A8C1E2'>0.528421337</td>
+  <td style='background:#C4D5EC'>0.361353408</td>
+  <td style='background:#FBEFF2'>-0.007088114</td>
+  <td style='background:#FBEFF2'>-0.006375083</td>
+  <td style='background:#E3EBF7'>0.173332735</td>
+  <td style='background:#E3EAF6'>0.174364607</td>
+  <td style='background:#FBD7DA'>-0.055951161</td>
+  <td style='background:#D6E1F2'>0.252474082</td>
+  <td style='background:#F5F7FD'>0.064108832</td>
+  <td style='background:#F9FAFE'>0.042600767</td>
+  <td style='background:#E2EAF6'>0.180750294</td>
+  <td style='background:#C5D5EC'>0.356367393</td>
+ </tr>
+ <tr>
+  <th>pashta</th>
+  <td style='background:#F9A3A6'>-0.162862051</td>
+  <td style='background:#D5E1F2'>0.256095606</td>
+  <td style='background:#FBE4E6'>-0.030282507</td>
+  <td style='background:#E0E8F5'>0.192621336</td>
+  <td style='background:#FBFAFD'>0.016532353</td>
+  <td style='background:#EBF0F9'>0.126301414</td>
+  <td style='background:#DDE6F4'>0.212037943</td>
+  <td style='background:#FBEBEE'>-0.014313634</td>
+  <td style='background:#7CA2D2'>0.799048151</td>
+  <td style='background:#8EAFD9'>0.687848096</td>
+  <td style='background:#FBD9DC'>-0.051255581</td>
+  <td style='background:#FBFAFD'>0.016280913</td>
+  <td style='background:#B6CBE7'>0.444879649</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#F7F9FE'>0.050389552</td>
+  <td style='background:#C4D5EC'>0.359864947</td>
+  <td style='background:#EEF3FB'>0.10473536</td>
+  <td style='background:#FBF7FA'>0.009932762</td>
+  <td style='background:#FBFAFD'>0.015046157</td>
+  <td style='background:#F5F7FD'>0.064770713</td>
+  <td style='background:#EEF2FA'>0.109235201</td>
+  <td style='background:#F99092'>-0.202805403</td>
+  <td style='background:#D7E2F2'>0.24344181</td>
+  <td style='background:#FBFBFE'>0.018153603</td>
+  <td style='background:#FBEBEE'>-0.014313634</td>
+  <td style='background:#FBDDDF'>-0.044631615</td>
+  <td style='background:#EFF3FB'>0.101031468</td>
+ </tr>
+ <tr>
+  <th>pazer</th>
+  <td style='background:#F8FAFE'>0.043975638</td>
+  <td style='background:#FBF4F7'>0.003541469</td>
+  <td style='background:#FBFAFD'>0.015428249</td>
+  <td style='background:#D7E2F2'>0.245768641</td>
+  <td style='background:#FBF1F4'>-0.002091814</td>
+  <td style='background:#FBEEF0'>-0.009852898</td>
+  <td style='background:#D9E4F3'>0.233403195</td>
+  <td style='background:#FBF1F4'>-0.002091814</td>
+  <td style='background:#FAFBFF'>0.032231893</td>
+  <td style='background:#F8F9FE'>0.046240241</td>
+  <td style='background:#FBF7FA'>0.01033664</td>
+  <td style='background:#FBF0F3'>-0.004679037</td>
+  <td style='background:#E4EBF7'>0.169221538</td>
+  <td style='background:#F7F9FE'>0.050389552</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#F1F5FC'>0.085702999</td>
+  <td style='background:#FBF4F7'>0.00368972</td>
+  <td style='background:#FBF0F3'>-0.0041847</td>
+  <td style='background:#FBE2E5'>-0.033662855</td>
+  <td style='background:#EAEFF9'>0.133795914</td>
+  <td style='background:#BBCEE8'>0.415810433</td>
+  <td style='background:#F9FAFE'>0.037195927</td>
+  <td style='background:#FBF5F8'>0.006550155</td>
+  <td style='background:#FBEFF2'>-0.006619989</td>
+  <td style='background:#FBF1F4'>-0.002091814</td>
+  <td style='background:#FBEBEE'>-0.0147672</td>
+  <td style='background:#FBF4F7'>0.004474943</td>
+ </tr>
+ <tr>
+  <th>revii</th>
+  <td style='background:#F9FAFE'>0.039248976</td>
+  <td style='background:#EAEFF9'>0.133740139</td>
+  <td style='background:#FBE4E7'>-0.029000952</td>
+  <td style='background:#BFD1EA'>0.390144181</td>
+  <td style='background:#FBEEF1'>-0.00913294</td>
+  <td style='background:#DFE8F5'>0.198112067</td>
+  <td style='background:#CAD9EE'>0.323859802</td>
+  <td style='background:#FAFBFF'>0.034718658</td>
+  <td style='background:#D1DEF0'>0.284660067</td>
+  <td style='background:#DFE8F5'>0.198121676</td>
+  <td style='background:#F7F9FE'>0.051506349</td>
+  <td style='background:#FBF7FA'>0.008997747</td>
+  <td style='background:#A8C1E2'>0.528421337</td>
+  <td style='background:#C4D5EC'>0.359864947</td>
+  <td style='background:#F1F5FC'>0.085702999</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#DBE5F4'>0.219714396</td>
+  <td style='background:#FBF4F7'>0.003660857</td>
+  <td style='background:#FBEDF0'>-0.011644456</td>
+  <td style='background:#F4F7FD'>0.067651877</td>
+  <td style='background:#DFE7F5'>0.200418883</td>
+  <td style='background:#EDF1FA'>0.114540289</td>
+  <td style='background:#EAF0F9'>0.129403457</td>
+  <td style='background:#FAFBFF'>0.033546832</td>
+  <td style='background:#FAFBFF'>0.034718658</td>
+  <td style='background:#EEF2FA'>0.109632618</td>
+  <td style='background:#DCE5F4'>0.217303153</td>
+ </tr>
+ <tr>
+  <th>segol</th>
+  <td style='background:#FBEDF0'>-0.01056699</td>
+  <td style='background:#F5F7FD'>0.066027221</td>
+  <td style='background:#FCFCFF'>0.021806977</td>
+  <td style='background:#EDF2FA'>0.112690208</td>
+  <td style='background:#FBF1F4'>-0.003405567</td>
+  <td style='background:#F0F3FB'>0.097485337</td>
+  <td style='background:#E5ECF7'>0.160630524</td>
+  <td style='background:#FBF1F4'>-0.003405567</td>
+  <td style='background:#F1F5FC'>0.086051039</td>
+  <td style='background:#F0F4FB'>0.091867017</td>
+  <td style='background:#FBFCFF'>0.026574045</td>
+  <td style='background:#FBEFF2'>-0.007617683</td>
+  <td style='background:#C4D5EC'>0.361353408</td>
+  <td style='background:#EEF3FB'>0.10473536</td>
+  <td style='background:#FBF4F7'>0.00368972</td>
+  <td style='background:#DBE5F4'>0.219714396</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBEFF2'>-0.00681288</td>
+  <td style='background:#FBE7EA'>-0.023604671</td>
+  <td style='background:#EFF3FB'>0.100276222</td>
+  <td style='background:#FBFCFF'>0.025201713</td>
+  <td style='background:#FBF8FB'>0.012614607</td>
+  <td style='background:#F7F8FD'>0.054409912</td>
+  <td style='background:#E5ECF7'>0.15879634</td>
+  <td style='background:#FBF1F4'>-0.003405567</td>
+  <td style='background:#FCFCFF'>0.020640702</td>
+  <td style='background:#5E8DC8'>0.981349823</td>
+ </tr>
+ <tr>
+  <th>shalshelet</th>
+  <td style='background:#FBEDF0'>-0.011599534</td>
+  <td style='background:#FBF6F8'>0.006627819</td>
+  <td style='background:#FBF9FC'>0.013626966</td>
+  <td style='background:#FBF4F7'>0.00360032</td>
+  <td style='background:#FBF2F5'>-0.000341851</td>
+  <td style='background:#FBEFF1'>-0.007815321</td>
+  <td style='background:#FBF0F3'>-0.0046057</td>
+  <td style='background:#FBF2F5'>-0.000341851</td>
+  <td style='background:#FBF7FA'>0.008792336</td>
+  <td style='background:#FBF2F5'>-0.000795853</td>
+  <td style='background:#FBFCFF'>0.026975893</td>
+  <td style='background:#FBF2F5'>-0.000764664</td>
+  <td style='background:#FBEFF2'>-0.007088114</td>
+  <td style='background:#FBF7FA'>0.009932762</td>
+  <td style='background:#FBF0F3'>-0.0041847</td>
+  <td style='background:#FBF4F7'>0.003660857</td>
+  <td style='background:#FBEFF2'>-0.00681288</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF3F6'>0.00178027</td>
+  <td style='background:#FBF0F3'>-0.005568777</td>
+  <td style='background:#FBEFF2'>-0.007445177</td>
+  <td style='background:#FBEEF1'>-0.008996732</td>
+  <td style='background:#FBF6F9'>0.007336407</td>
+  <td style='background:#FBF2F5'>-0.00108186</td>
+  <td style='background:#FBF2F5'>-0.000341851</td>
+  <td style='background:#FBEFF2'>-0.006357754</td>
+  <td style='background:#FBEFF2'>-0.006685819</td>
+ </tr>
+ <tr>
+  <th>sofpasuk</th>
+  <td style='background:#FBFBFE'>0.018196268</td>
+  <td style='background:#F7F8FD'>0.054871206</td>
+  <td style='background:#FCFCFF'>0.019908426</td>
+  <td style='background:#FBEDF0'>-0.010843543</td>
+  <td style='background:#FBF3F6'>0.000889907</td>
+  <td style='background:#FBF4F7'>0.00304951</td>
+  <td style='background:#FBF3F6'>0.002430249</td>
+  <td style='background:#FBF3F6'>0.000889907</td>
+  <td style='background:#FCFCFF'>0.022834941</td>
+  <td style='background:#FBF4F7'>0.003982878</td>
+  <td style='background:#FBECEF'>-0.01366361</td>
+  <td style='background:#FBF3F6'>0.001990572</td>
+  <td style='background:#FBEFF2'>-0.006375083</td>
+  <td style='background:#FBFAFD'>0.015046157</td>
+  <td style='background:#FBE2E5'>-0.033662855</td>
+  <td style='background:#FBEDF0'>-0.011644456</td>
+  <td style='background:#FBE7EA'>-0.023604671</td>
+  <td style='background:#FBF3F6'>0.00178027</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF4F7'>0.0028143</td>
+  <td style='background:#FBEAED'>-0.017312441</td>
+  <td style='background:#FBF3F6'>0.00146005</td>
+  <td style='background:#F6F8FD'>0.057747351</td>
+  <td style='background:#FBF4F7'>0.002816299</td>
+  <td style='background:#FBF3F6'>0.000889907</td>
+  <td style='background:#FBF1F3'>-0.003605571</td>
+  <td style='background:#FBE7EA'>-0.023942474</td>
+ </tr>
+ <tr>
+  <th>telishagedola</th>
+  <td style='background:#EEF2FA'>0.105223257</td>
+  <td style='background:#FAFBFF'>0.031325096</td>
+  <td style='background:#FBF0F3'>-0.005601871</td>
+  <td style='background:#E5ECF7'>0.163732313</td>
+  <td style='background:#FBF1F4'>-0.002783675</td>
+  <td style='background:#F7F9FE'>0.050394091</td>
+  <td style='background:#D9E4F3'>0.231614142</td>
+  <td style='background:#FBF1F4'>-0.002783675</td>
+  <td style='background:#F8FAFE'>0.044189341</td>
+  <td style='background:#F1F5FC'>0.086523959</td>
+  <td style='background:#FCFCFF'>0.019993513</td>
+  <td style='background:#F8F9FE'>0.047965765</td>
+  <td style='background:#E3EBF7'>0.173332735</td>
+  <td style='background:#F5F7FD'>0.064770713</td>
+  <td style='background:#EAEFF9'>0.133795914</td>
+  <td style='background:#F4F7FD'>0.067651877</td>
+  <td style='background:#EFF3FB'>0.100276222</td>
+  <td style='background:#FBF0F3'>-0.005568777</td>
+  <td style='background:#FBF4F7'>0.0028143</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF4F7'>0.002737952</td>
+  <td style='background:#F2F5FC'>0.080067647</td>
+  <td style='background:#FBFCFF'>0.02656529</td>
+  <td style='background:#FBEEF1'>-0.00880953</td>
+  <td style='background:#FBF1F4'>-0.002783675</td>
+  <td style='background:#FBF6F9'>0.008348618</td>
+  <td style='background:#EFF3FB'>0.10133739</td>
+ </tr>
+ <tr>
+  <th>telishaketana</th>
+  <td style='background:#F3F6FC'>0.074889792</td>
+  <td style='background:#F9FAFE'>0.041672337</td>
+  <td style='background:#FBF3F6'>0.001699665</td>
+  <td style='background:#B5CAE6'>0.453408134</td>
+  <td style='background:#FBF1F3'>-0.003721634</td>
+  <td style='background:#FBEBEE'>-0.014727273</td>
+  <td style='background:#B4CAE6'>0.457346332</td>
+  <td style='background:#F8FAFE'>0.043838902</td>
+  <td style='background:#F3F6FC'>0.073857625</td>
+  <td style='background:#EEF2FA'>0.109127422</td>
+  <td style='background:#F8F9FE'>0.046762396</td>
+  <td style='background:#FBEEF1'>-0.008324673</td>
+  <td style='background:#E3EAF6'>0.174364607</td>
+  <td style='background:#EEF2FA'>0.109235201</td>
+  <td style='background:#BBCEE8'>0.415810433</td>
+  <td style='background:#DFE7F5'>0.200418883</td>
+  <td style='background:#FBFCFF'>0.025201713</td>
+  <td style='background:#FBEFF2'>-0.007445177</td>
+  <td style='background:#FBEAED'>-0.017312441</td>
+  <td style='background:#FBF4F7'>0.002737952</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#F4F6FC'>0.071696317</td>
+  <td style='background:#F8F9FE'>0.046714729</td>
+  <td style='background:#FBF4F7'>0.003273639</td>
+  <td style='background:#F8FAFE'>0.043838902</td>
+  <td style='background:#FBF0F3'>-0.004614392</td>
+  <td style='background:#FBFCFF'>0.02660191</td>
+ </tr>
+ <tr>
+  <th>tevir</th>
+  <td style='background:#A4BEE0'>0.557802693</td>
+  <td style='background:#F9FAFE'>0.039412357</td>
+  <td style='background:#FACCCF'>-0.078933372</td>
+  <td style='background:#EEF2FA'>0.106944803</td>
+  <td style='background:#FBEEF0'>-0.009918879</td>
+  <td style='background:#EDF2FA'>0.110572234</td>
+  <td style='background:#E3EBF7'>0.173828927</td>
+  <td style='background:#FBF8FB'>0.011767784</td>
+  <td style='background:#F8696B'>-0.284285143</td>
+  <td style='background:#FABEC0'>-0.108384339</td>
+  <td style='background:#D1DEF0'>0.284124791</td>
+  <td style='background:#FBE8EA'>-0.022186871</td>
+  <td style='background:#FBD7DA'>-0.055951161</td>
+  <td style='background:#F99092'>-0.202805403</td>
+  <td style='background:#F9FAFE'>0.037195927</td>
+  <td style='background:#EDF1FA'>0.114540289</td>
+  <td style='background:#FBF8FB'>0.012614607</td>
+  <td style='background:#FBEEF1'>-0.008996732</td>
+  <td style='background:#FBF3F6'>0.00146005</td>
+  <td style='background:#F2F5FC'>0.080067647</td>
+  <td style='background:#F4F6FC'>0.071696317</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#F9FAFE'>0.042251628</td>
+  <td style='background:#FBF7FA'>0.009788832</td>
+  <td style='background:#FBF8FB'>0.011767784</td>
+  <td style='background:#FAD1D4'>-0.067777998</td>
+  <td style='background:#FBF9FC'>0.012851026</td>
+ </tr>
+ <tr>
+  <th>tipkha</th>
+  <td style='background:#FBEFF2'>-0.00722024</td>
+  <td style='background:#6A95CC'>0.907753449</td>
+  <td style='background:#F9FAFE'>0.041797442</td>
+  <td style='background:#F1F5FC'>0.087090417</td>
+  <td style='background:#FBF4F7'>0.003667263</td>
+  <td style='background:#FBFBFF'>0.030261166</td>
+  <td style='background:#EEF2FA'>0.107264648</td>
+  <td style='background:#FBF4F7'>0.003667263</td>
+  <td style='background:#D3E0F1'>0.268018296</td>
+  <td style='background:#E3EBF7'>0.173815933</td>
+  <td style='background:#F0F4FB'>0.09487712</td>
+  <td style='background:#FBF6F9'>0.008203053</td>
+  <td style='background:#D6E1F2'>0.252474082</td>
+  <td style='background:#D7E2F2'>0.24344181</td>
+  <td style='background:#FBF5F8'>0.006550155</td>
+  <td style='background:#EAF0F9'>0.129403457</td>
+  <td style='background:#F7F8FD'>0.054409912</td>
+  <td style='background:#FBF6F9'>0.007336407</td>
+  <td style='background:#F6F8FD'>0.057747351</td>
+  <td style='background:#FBFCFF'>0.02656529</td>
+  <td style='background:#F8F9FE'>0.046714729</td>
+  <td style='background:#F9FAFE'>0.042251628</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF8FB'>0.011605832</td>
+  <td style='background:#FBF4F7'>0.003667263</td>
+  <td style='background:#F5F7FD'>0.063000392</td>
+  <td style='background:#F7F9FE'>0.053043661</td>
+ </tr>
+ <tr>
+  <th>tsinnorit</th>
+  <td style='background:#FCFCFF'>0.021027526</td>
+  <td style='background:#FBF7FA'>0.010484881</td>
+  <td style='background:#FBF9FC'>0.014826099</td>
+  <td style='background:#FBFBFF'>0.029834499</td>
+  <td style='background:#FBF2F5'>-0.000540792</td>
+  <td style='background:#FBFBFF'>0.030203182</td>
+  <td style='background:#F8F9FE'>0.044996264</td>
+  <td style='background:#FBF2F5'>-0.000540792</td>
+  <td style='background:#FBF2F5'>0.000268781</td>
+  <td style='background:#FCFCFF'>0.023826695</td>
+  <td style='background:#FCFCFF'>0.02456676</td>
+  <td style='background:#FBF2F5'>-0.00120966</td>
+  <td style='background:#F5F7FD'>0.064108832</td>
+  <td style='background:#FBFBFE'>0.018153603</td>
+  <td style='background:#FBEFF2'>-0.006619989</td>
+  <td style='background:#FAFBFF'>0.033546832</td>
+  <td style='background:#E5ECF7'>0.15879634</td>
+  <td style='background:#FBF2F5'>-0.00108186</td>
+  <td style='background:#FBF4F7'>0.002816299</td>
+  <td style='background:#FBEEF1'>-0.00880953</td>
+  <td style='background:#FBF4F7'>0.003273639</td>
+  <td style='background:#FBF7FA'>0.009788832</td>
+  <td style='background:#FBF8FB'>0.011605832</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF2F5'>-0.000540792</td>
+  <td style='background:#FBF5F8'>0.006478144</td>
+  <td style='background:#FBEDF0'>-0.010576634</td>
+ </tr>
+ <tr>
+  <th>yerakhbenyomo</th>
+  <td style='background:#FBF0F2'>-0.00579828</td>
+  <td style='background:#FBF4F7'>0.00331306</td>
+  <td style='background:#FBF0F3'>-0.003822858</td>
+  <td style='background:#FCFCFF'>0.024682321</td>
+  <td style='background:#FBF2F5'>-0.000170882</td>
+  <td style='background:#F9FAFE'>0.040927996</td>
+  <td style='background:#FAFAFE'>0.036245298</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FBF1F4'>-0.002788476</td>
+  <td style='background:#FBEDF0'>-0.010306187</td>
+  <td style='background:#FBF5F8'>0.006332272</td>
+  <td style='background:#FBF2F5'>-0.000382234</td>
+  <td style='background:#F9FAFE'>0.042600767</td>
+  <td style='background:#FBEBEE'>-0.014313634</td>
+  <td style='background:#FBF1F4'>-0.002091814</td>
+  <td style='background:#FAFBFF'>0.034718658</td>
+  <td style='background:#FBF1F4'>-0.003405567</td>
+  <td style='background:#FBF2F5'>-0.000341851</td>
+  <td style='background:#FBF3F6'>0.000889907</td>
+  <td style='background:#FBF1F4'>-0.002783675</td>
+  <td style='background:#F8FAFE'>0.043838902</td>
+  <td style='background:#FBF8FB'>0.011767784</td>
+  <td style='background:#FBF4F7'>0.003667263</td>
+  <td style='background:#FBF2F5'>-0.000540792</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#F8F9FE'>0.04907249</td>
+  <td style='background:#FBF1F4'>-0.003342052</td>
+ </tr>
+ <tr>
+  <th>yetiv</th>
+  <td style='background:#FBDFE2'>-0.039583964</td>
+  <td style='background:#F5F8FD'>0.06161635</td>
+  <td style='background:#FBEBEE'>-0.01554073</td>
+  <td style='background:#F9FAFE'>0.041440325</td>
+  <td style='background:#FBF1F4'>-0.003178062</td>
+  <td style='background:#FBF7FA'>0.00932212</td>
+  <td style='background:#FBF9FC'>0.014719308</td>
+  <td style='background:#F8F9FE'>0.04907249</td>
+  <td style='background:#DCE6F4'>0.213837116</td>
+  <td style='background:#FBDEE1'>-0.041562256</td>
+  <td style='background:#FBE3E6'>-0.031689661</td>
+  <td style='background:#FBEFF2'>-0.007108792</td>
+  <td style='background:#E2EAF6'>0.180750294</td>
+  <td style='background:#FBDDDF'>-0.044631615</td>
+  <td style='background:#FBEBEE'>-0.0147672</td>
+  <td style='background:#EEF2FA'>0.109632618</td>
+  <td style='background:#FCFCFF'>0.020640702</td>
+  <td style='background:#FBEFF2'>-0.006357754</td>
+  <td style='background:#FBF1F3'>-0.003605571</td>
+  <td style='background:#FBF6F9'>0.008348618</td>
+  <td style='background:#FBF0F3'>-0.004614392</td>
+  <td style='background:#FAD1D4'>-0.067777998</td>
+  <td style='background:#F5F7FD'>0.063000392</td>
+  <td style='background:#FBF5F8'>0.006478144</td>
+  <td style='background:#F8F9FE'>0.04907249</td>
+  <td style='background:#5A8AC6'>1</td>
+  <td style='background:#FCFCFF'>0.02183624</td>
+ </tr>
+ <tr>
+  <th>zarka</th>
+  <td style='background:#FBECEF'>-0.013394309</td>
+  <td style='background:#F5F7FD'>0.064795802</td>
+  <td style='background:#FBFBFE'>0.01868592</td>
+  <td style='background:#EDF2FA'>0.111625658</td>
+  <td style='background:#FBF1F4'>-0.003342052</td>
+  <td style='background:#F0F4FB'>0.094162513</td>
+  <td style='background:#E6EDF8'>0.155324949</td>
+  <td style='background:#FBF1F4'>-0.003342052</td>
+  <td style='background:#F1F5FC'>0.085571937</td>
+  <td style='background:#F1F5FC'>0.087253618</td>
+  <td style='background:#FCFCFF'>0.021904055</td>
+  <td style='background:#FBEFF2'>-0.007475612</td>
+  <td style='background:#C5D5EC'>0.356367393</td>
+  <td style='background:#EFF3FB'>0.101031468</td>
+  <td style='background:#FBF4F7'>0.004474943</td>
+  <td style='background:#DCE5F4'>0.217303153</td>
+  <td style='background:#5E8DC8'>0.981349823</td>
+  <td style='background:#FBEFF2'>-0.006685819</td>
+  <td style='background:#FBE7EA'>-0.023942474</td>
+  <td style='background:#EFF3FB'>0.10133739</td>
+  <td style='background:#FBFCFF'>0.02660191</td>
+  <td style='background:#FBF9FC'>0.012851026</td>
+  <td style='background:#F7F9FE'>0.053043661</td>
+  <td style='background:#FBEDF0'>-0.010576634</td>
+  <td style='background:#FBF1F4'>-0.003342052</td>
+  <td style='background:#FCFCFF'>0.02183624</td>
+  <td style='background:#5A8AC6'>1</td>
+ </tr>
+</table>
+
+</body>
+
+</html>
