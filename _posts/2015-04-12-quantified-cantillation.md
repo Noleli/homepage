@@ -60,7 +60,7 @@ Oddly, I did a bit of digging into this, and it looks like a drop in words per *
 
 I could imagine running a logistic regression to see whether words per *pasuk* predicts the presense of an *etnakhta*, but I'm going to cut myself off now.
 
-If you're interested in playing around with this yourself, everything is on [GitHub](https://github.com/Noleli/trop-analysis). If you just want to cut to the chase, here's a [CSV file]({{site.baseurl}}/post-uploads/trop/trop.csv) of the raw data.
+If you're interested in playing around with this yourself, everything is on [GitHub](https://github.com/Noleli/trop-analysis). If you just want to cut to the chase, here's a [CSV file]({{site.baseurl}}/post-uploads/trop/trop.csv) of the raw data. And here's an [IPython Notebook](http://nbviewer.ipython.org/github/Noleli/trop-analysis/blob/master/Trop%20analysis.ipynb).
 
 [^women]: No wife required, incredibly.
 
