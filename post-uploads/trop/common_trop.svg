@@ -13361,7 +13361,7 @@ L212.557 43.2" style="fill:none;stroke:#000000;stroke-dasharray:1.000000,3.00000
       </g>
      </g>
      <g id="text_2">
-      <!-- Shmot -->
+      <!-- Shemot -->
       <defs>
        <path d="
 M52 44.1875
@@ -13442,12 +13442,13 @@ Q5.51562 13.875 5.51562 27.2969
 Q5.51562 40.7656 12.1719 48.375
 Q18.8438 56 30.6094 56" id="BitstreamVeraSans-Roman-6f"/>
       </defs>
-      <g transform="translate(193.616864533 391.118125)scale(0.12 -0.12)">
+      <g transform="translate(189.924989533 391.118125)scale(0.12 -0.12)">
        <use xlink:href="#BitstreamVeraSans-Roman-53"/>
        <use x="63.4765625" xlink:href="#BitstreamVeraSans-Roman-68"/>
-       <use x="126.85546875" xlink:href="#BitstreamVeraSans-Roman-6d"/>
-       <use x="224.267578125" xlink:href="#BitstreamVeraSans-Roman-6f"/>
-       <use x="285.44921875" xlink:href="#BitstreamVeraSans-Roman-74"/>
+       <use x="126.85546875" xlink:href="#BitstreamVeraSans-Roman-65"/>
+       <use x="188.37890625" xlink:href="#BitstreamVeraSans-Roman-6d"/>
+       <use x="285.791015625" xlink:href="#BitstreamVeraSans-Roman-6f"/>
+       <use x="346.97265625" xlink:href="#BitstreamVeraSans-Roman-74"/>
       </g>
      </g>
     </g>
@@ -13572,7 +13573,7 @@ L390.37 43.2" style="fill:none;stroke:#000000;stroke-dasharray:1.000000,3.000000
       </g>
      </g>
      <g id="text_4">
-      <!-- Bamidbar -->
+      <!-- B'midbar -->
       <defs>
        <path d="
 M45.4062 46.3906
@@ -13599,6 +13600,13 @@ Q37.2031 48.4844 30.0781 48.4844
 Q22.9531 48.4844 18.875 42.8438
 Q14.7969 37.2031 14.7969 27.2969" id="BitstreamVeraSans-Roman-64"/>
        <path d="
+M17.9219 72.9062
+L17.9219 45.7969
+L9.625 45.7969
+L9.625 72.9062
+z
+" id="BitstreamVeraSans-Roman-27"/>
+       <path d="
 M48.6875 27.2969
 Q48.6875 37.2031 44.6094 42.8438
 Q40.5312 48.4844 33.4062 48.4844
@@ -13624,15 +13632,15 @@ L18.1094 75.9844
 z
 " id="BitstreamVeraSans-Roman-62"/>
       </defs>
-      <g transform="translate(361.892117225 391.118125)scale(0.12 -0.12)">
+      <g transform="translate(363.919929725 391.118125)scale(0.12 -0.12)">
        <use xlink:href="#BitstreamVeraSans-Roman-42"/>
-       <use x="68.603515625" xlink:href="#BitstreamVeraSans-Roman-61"/>
-       <use x="129.8828125" xlink:href="#BitstreamVeraSans-Roman-6d"/>
-       <use x="227.294921875" xlink:href="#BitstreamVeraSans-Roman-69"/>
-       <use x="255.078125" xlink:href="#BitstreamVeraSans-Roman-64"/>
-       <use x="318.5546875" xlink:href="#BitstreamVeraSans-Roman-62"/>
-       <use x="382.03125" xlink:href="#BitstreamVeraSans-Roman-61"/>
-       <use x="443.310546875" xlink:href="#BitstreamVeraSans-Roman-72"/>
+       <use x="68.603515625" xlink:href="#BitstreamVeraSans-Roman-27"/>
+       <use x="96.09375" xlink:href="#BitstreamVeraSans-Roman-6d"/>
+       <use x="193.505859375" xlink:href="#BitstreamVeraSans-Roman-69"/>
+       <use x="221.2890625" xlink:href="#BitstreamVeraSans-Roman-64"/>
+       <use x="284.765625" xlink:href="#BitstreamVeraSans-Roman-62"/>
+       <use x="348.2421875" xlink:href="#BitstreamVeraSans-Roman-61"/>
+       <use x="409.521484375" xlink:href="#BitstreamVeraSans-Roman-72"/>
       </g>
      </g>
     </g>
@@ -13684,13 +13692,6 @@ Q51.1719 0 30.0781 0
 L9.8125 0
 z
 " id="BitstreamVeraSans-Roman-44"/>
-       <path d="
-M17.9219 72.9062
-L17.9219 45.7969
-L9.625 45.7969
-L9.625 72.9062
-z
-" id="BitstreamVeraSans-Roman-27"/>
       </defs>
       <g transform="translate(478.610303956 391.118125)scale(0.12 -0.12)">
        <use xlink:href="#BitstreamVeraSans-Roman-44"/>

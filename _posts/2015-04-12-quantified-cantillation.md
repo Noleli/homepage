@@ -25,7 +25,7 @@ However, the ratio of *telisha gedola* to *telisha ketana* is actually not subst
 
 <!-- relatively more *ketana*s than *gedola*s in the middle of *Dvarim*. -->
 
-Aggregating by *sefer* is interesting, but I wanted to see more continuous variations. Looking at a series of what for most *trop* would be zeros and ones, with an occasional two or three, isn't that useful, but [Zach](https://twitter.com/zseeskin) (a Ph.D. student in Statistics) suggested a moving average, and that worked quite nicely. We used a 500-*pasuk*-wide window, which struk a balance between detail and low-pass filtering. (I come from a signal processing background, not time-series analysis.)
+Aggregating by *sefer* is interesting, but I wanted to see more continuous variations. Looking at a series of what for most *trop* would be zeros and ones, with an occasional two or three, isn't that useful, but [Zach](https://twitter.com/zseeskin) (a Ph.D. student in Statistics) suggested a moving average, and that worked quite nicely. We used a 500-*pasuk*-wide window, which struck a balance between detail and low-pass filtering. (I come from a signal processing background, not time-series analysis.)
 
 As with the initial bar graph, you can really see the number of *telisha ketana*s explode in *D'varim*. But more interestingly, we can get a sense of how they track each other through the Torah.
 
@@ -52,7 +52,7 @@ While these patterns are intuitive, the fact that trop --- especially common one
 
 <img src="{{site.baseurl}}/post-uploads/trop/etnakhta.svg" alt="Etnakhta through the Torah">
 
-The reason for the rather dramatic plunge toward the beginning of *Bamidbar* seems to be a shift in sentence structure. Checking the text, this part of the Torah contains quite a bit of genealogy, which contains many single-phrase sentences ("So-and-so begat so-and-so"[^women]), and many occurrences of the common *pasuk* "<span dir="rtl">וידבר ה` אל־משה לאמר</span>".
+The reason for the rather dramatic plunge toward the beginning of *B'midbar* seems to be a shift in sentence structure. Checking the text, this part of the Torah contains quite a bit of genealogy, which contains many single-phrase sentences ("So-and-so begat so-and-so"[^women]), and many occurrences of the common *pasuk* "<span dir="rtl">וידבר ה` אל־משה לאמר</span>".
 
 Oddly, I did a bit of digging into this, and it looks like a drop in words per *pasuk* actually lags the drop in *etnakhta*s. I'm not sure why.
 
@@ -60,7 +60,7 @@ Oddly, I did a bit of digging into this, and it looks like a drop in words per *
 
 I could imagine running a logistic regression to see whether words per *pasuk* predicts the presense of an *etnakhta*, but I'm going to cut myself off now.
 
-If you're interested in playing around with this yourself, everything is on [GitHub](https://github.com/Noleli/trop-analysis). If you just want to cut to the chase, [here's a CSV]({{site.baseurl}}/post-uploads/trop/trop.csv) of the raw data.
+If you're interested in playing around with this yourself, everything is on [GitHub](https://github.com/Noleli/trop-analysis). If you just want to cut to the chase, here's a [CSV file]({{site.baseurl}}/post-uploads/trop/trop.csv) of the raw data.
 
 [^women]: No wife required, incredibly.
 
