@@ -594,6 +594,19 @@ sup
   text-align: center;
 }
 
+.svg #content img.svgalt.img {
+	display: none;
+}
+.svg #content img.svgalt.svg {
+	display: inline;
+}
+.no-svg #content img.svgalt.img {
+	display: inline;
+}
+.no-svg #content img.svgalt.svg {
+	display: none;
+}
+
 /* Begin Images --- from Default theme */
 p img {
     padding: 0;

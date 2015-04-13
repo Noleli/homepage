@@ -17,11 +17,14 @@ First, I needed a dataset. [Tanach.us](http://tanach.us) offers the entire *Tana
 
 Aggregating by *sefer* to consider my original question about the relative frequencies of *telisha gedolah*s and *telisha ketana*s, we see that my intuition was somewhat correct: while there are more *ketana*s throughout, there are more overall *ketana*s in *D'varim*.
 
-<img src="{{site.baseurl}}/post-uploads/trop/telisha_bar.svg" alt="Telisha Ketana and Telisha Gedola by Sefer">
+<img src="{{site.baseurl}}/post-uploads/trop/telisha_bar.svg" alt="Telisha Ketana and Telisha Gedola by Sefer" class="svgalt svg">
+<img src="{{site.baseurl}}/post-uploads/trop/telisha_bar.png" alt="Telisha Ketana and Telisha Gedola by Sefer" class="svgalt img">
+
 
 However, the ratio of *telisha gedola* to *telisha ketana* is actually not substantially different in *D'varim* and *Bereshit*. So while overall counts are higher, the relative frequencies are not so different.
 
-<img src="{{site.baseurl}}/post-uploads/trop/telisha_ratios.svg" alt="Ration of Telisha Ketana to Telisha Gedola by sefer">
+<img src="{{site.baseurl}}/post-uploads/trop/telisha_ratios.svg" alt="Ration of Telisha Ketana to Telisha Gedola by sefer" class="svgalt svg">
+<img src="{{site.baseurl}}/post-uploads/trop/telisha_ratios.png" alt="Ration of Telisha Ketana to Telisha Gedola by sefer" class="svgalt img">
 
 <!-- relatively more *ketana*s than *gedola*s in the middle of *Dvarim*. -->
 
@@ -32,31 +35,37 @@ As with the initial bar graph, you can really see the number of *telisha ketana*
 <!-- Although I had some initial concerns about whether a mean would be meaningful for such non-normal data, it's essentially just a count of *trop* occurances in a given window normalized by the number of *psukim* in the window. -->
 
 
-<img src="{{site.baseurl}}/post-uploads/trop/telisha.svg" alt="Telisha Ketana and Telisha Gedola through the Torah">
+<img src="{{site.baseurl}}/post-uploads/trop/telisha.svg" alt="Telisha Ketana and Telisha Gedola through the Torah" class="svgalt svg">
+<img src="{{site.baseurl}}/post-uploads/trop/telisha.png" alt="Telisha Ketana and Telisha Gedola through the Torah" class="svgalt img">
 
 Seeing how different *trop* track each other is fun. There are some things that you'd expect. For example, *munakh* is often associated with *katan*, *revi'i*, and *mapakh*--*pashta*, and we see that clearly here.
 
-<img src="{{site.baseurl}}/post-uploads/trop/common_trop.svg" alt="Common associated trop through the Torah">
+<img src="{{site.baseurl}}/post-uploads/trop/common_trop.svg" alt="Common associated trop through the Torah" class="svgalt svg">
+<img src="{{site.baseurl}}/post-uploads/trop/common_trop.png" alt="Common associated trop through the Torah" class="svgalt img">
 
 Particklarly striking is the tight correlation between *zarka* and *segol*.
 
-<img src="{{site.baseurl}}/post-uploads/trop/zarkasegol.svg" alt="Zarka and segol through the Torah">
+<img src="{{site.baseurl}}/post-uploads/trop/zarkasegol.svg" alt="Zarka and segol through the Torah" class="svgalt svg">
+<img src="{{site.baseurl}}/post-uploads/trop/zarkasegol.png" alt="Zarka and segol through the Torah" class="svgalt img">
 
 Although other combinations, though, like *darga*--*tevir* are more loosely correlated.
 
-<img src="{{site.baseurl}}/post-uploads/trop/dargatevir.svg" alt="Darga and tevir through the Torah">
+<img src="{{site.baseurl}}/post-uploads/trop/dargatevir.svg" alt="Darga and tevir through the Torah" class="svgalt svg">
+<img src="{{site.baseurl}}/post-uploads/trop/dargatevir.png" alt="Darga and tevir through the Torah" class="svgalt img">
 
 (For more correlations, here are the [*pasuk* by *pasuk*]({{site.baseurl}}/post-uploads/trop/rawcorr.html) and [moving window]({{site.baseurl}}/post-uploads/trop/rollingcorr.html) correlation tables.)
 
 While these patterns are intuitive, the fact that trop --- especially common ones like *merkha* and *tipkha* --- aren't uniformly distributed across the Torah was, to me, somewhat less expected. A big reason for this is changes in sentence structure. This becomes extremely obvious when looking at *etnakhta*, which essentially functions as a comma.
 
-<img src="{{site.baseurl}}/post-uploads/trop/etnakhta.svg" alt="Etnakhta through the Torah">
+<img src="{{site.baseurl}}/post-uploads/trop/etnakhta.svg" alt="Etnakhta through the Torah" class="svgalt svg">
+<img src="{{site.baseurl}}/post-uploads/trop/etnakhta.png" alt="Etnakhta through the Torah" class="svgalt img">
 
 The reason for the rather dramatic plunge toward the beginning of *B'midbar* seems to be a shift in sentence structure. Checking the text, this part of the Torah contains quite a bit of genealogy, which contains many single-phrase sentences ("So-and-so begat so-and-so"[^women]), and many occurrences of the common *pasuk* "<span dir="rtl">וידבר ה` אל־משה לאמר</span>".
 
 Oddly, I did a bit of digging into this, and it looks like a drop in words per *pasuk* actually lags the drop in *etnakhta*s. I'm not sure why.
 
-<img src="{{site.baseurl}}/post-uploads/trop/etnakhtawordcount.svg" alt="Etnakhta and wordcount through the Torah">
+<img src="{{site.baseurl}}/post-uploads/trop/etnakhtawordcount.svg" alt="Etnakhta and wordcount through the Torah" class="svgalt svg">
+<img src="{{site.baseurl}}/post-uploads/trop/etnakhtawordcount.png" alt="Etnakhta and wordcount through the Torah" class="svgalt img">
 
 I could imagine running a logistic regression to see whether words per *pasuk* predicts the presense of an *etnakhta*, but I'm going to cut myself off now.
 
