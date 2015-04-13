@@ -594,17 +594,11 @@ sup
   text-align: center;
 }
 
-.svg #content img.svgalt.img {
+html.svg #content img.svgalt.img, html.no-svg #content img.svgalt.svg, #content img.svgalt.svg {
 	display: none;
 }
-.svg #content img.svgalt.svg {
+html.svg #content img.svgalt.svg, html.no-svg #content img.svgalt.img {
 	display: inline;
-}
-.no-svg #content img.svgalt.img {
-	display: inline;
-}
-.no-svg #content img.svgalt.svg {
-	display: none;
 }
 
 /* Begin Images --- from Default theme */
