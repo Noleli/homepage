@@ -7,9 +7,9 @@ Hi, I'm Noah.
 
 ![Me]({{site.baseurl}}/images/me_fordshoot.png){: .alignright}I’m a fourth-year Ph.D. student in [Northwestern University](http://www.northwestern.edu)’s unique [Technology and Social Behavior](http://tsb.northwestern.edu/) program, a joint Ph.D. in [Computer Science](http://eecs.northwestern.edu/) and [Communication Studies](http://www.communication.northwestern.edu/). I am a member of the [CollabLab](http://collablab.northwestern.edu/), and work with the [Social Media Lab](http://socialmedia.northwestern.edu/), as well.
 
-My interests range from traditional Human--Computer Interaction --- that is, creating usable, enjoyable interfaces through research and design --- to ubiquitous, pervasive, and urban computing, to the sociological impacts of technologically-mediated communication in all its forms. These include how social norms emerge in mediated contexts as well as how those new normative behaviors affect offline behavior in social contexts. Additionally, I am interested in the impact being an open-source software project has on design and usability.
+My interests range from traditional Human--Computer Interaction --- that is, creating usable, enjoyable interfaces through research and design --- to ubiquitous, pervasive, and urban computing, to the sociological impacts of technologically-mediated communication in all its forms. These include how social norms emerge in mediated environments as well as how those new normative behaviors affect offline behavior in social contexts. Additionally, I am interested in user interfaces for audio production.
 
-Current projects include studying emoticon use and the use of haptic interfaces in communication.
+Current projects include studying the similarity between people's words in text-based communication, and how we can apply computational models of human auditory perception to the design of smarter user interfaces for mixing multitrack audio.
 
 I hope my work will shed light on how networked/&#8203;pervasive/&#8203;public/&#8203;personal/&#8203;mobile computing and communication impacts behavior within and outside those systems, both individually and collectively.
 
