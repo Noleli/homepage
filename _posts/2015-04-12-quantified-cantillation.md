@@ -3,6 +3,8 @@
 title: Quantified cantillation
 ---
 
+> Second post: [Word counts]({% post_url 2015-04-17-quantified-cantillation-ii-word-counts %})
+
 When read publicly, the [Torah](https://en.wikipedia.org/wiki/Torah) is often sung using a system of [cantillation marks](https://en.wikipedia.org/wiki/Cantillation), or *trop* in Yiddish. There are many different cantillation marks, each of which has a name, a unique sound (or sounds), and comes in combination with other *trop*.
 
 When the cycle of readings started over this year after [Simchas Torah](https://en.wikipedia.org/wiki/Simchat_Torah)[^transliteration], it seemed like there were more *telisha gedolah*s in *Bereshit* (Genesis), whereas there were more *telisha ketana*s in *D'varim* (Deuteronomy). I decided to find out whether or not this was really the case.

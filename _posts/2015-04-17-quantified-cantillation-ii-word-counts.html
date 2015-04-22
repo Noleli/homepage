@@ -1,0 +1,38 @@
+---
+title: "Quantified cantillation II: word counts"
+d3: false
+nvd3: false
+---
+
+<blockquote><p><a href="{% post_url 2015-04-12-quantified-cantillation %}">First post</a></p></blockquote>
+
+<p>A lot of discussion around my <a href="{% post_url 2015-04-12-quantified-cantillation %}">last post</a> was about the role of sentence structure. For example, there’s a heuristic that <em>psukim</em> with fewer than five words don’t have an <em>etnakhta</em>, while those with more than five words do. This visualization lets you explore these types of relationships.</p>
+
+<iframe id="bywordcount_iframe" class="centered" src="{{site.baseurl}}/post-uploads/trop/bywordcount.html" width=510 height=450></iframe>
+<div><img src="{{site.baseurl}}/post-uploads/trop/bywordcount_fallback.png" alt="By word count visualization static" class="svgalt img"></div>
+
+<p>We see that, indeed, <em>etnakhta</em>s do approximately follow this pattern, while other <em>trop</em>s’ counts naturally vary more linearly with word count (e.g., <em>mapakh</em> and <em>pashta</em>). Other <em>trop</em>, though, like <em>tipkha</em>, quickly hit a ceiling regardless of how long a <em>pasuk</em> gets.</p>
+
+<p>Note that I’ve cut off the <em>x</em> axis at 33 words. While there are much longer <em>psukim</em>, there aren’t enough of them to get meaningful averages.</p>
+
+<p>
+	<img src="{{site.baseurl}}/post-uploads/trop/wordcountdist.svg" alt="Wordcount distribution" class="svgalt svg">
+	<img src="{{site.baseurl}}/post-uploads/trop/wordcountdist.png" alt="Wordcount distribution" class="svgalt img">
+</p>
+
+<p>Click in the legend to turn a <em>trop</em> on and off; double-click to solo it. As with the first post, there’s nothing revolutionary here, but I think it’s still interesting to see and explore. (Also, I'm no expert on D3/NVD3, so don’t judge me too harshly. And if you’re on IE and it doesn’t work, tough luck.)</p>
+
+<!--<link href="{{site.baseurl}}/post-uploads/trop/bywordcount.css" rel="stylesheet" type="text/css" />
+
+<div id="vis-container">
+
+<div id="bywordcount_chartcontainer">
+<h2>Trop counts by word count</h2>
+<div id="bywordcount_chart">
+
+</div>
+</div>
+
+</div>
+
+<script src="{{site.baseurl}}/post-uploads/trop/bywordcount.js"></script>-->

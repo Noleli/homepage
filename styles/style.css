@@ -612,7 +612,7 @@ p img {
     will of course center the image. This is much better than using
     align="center", being much more futureproof (and valid) */
 
-img.centered, img.aligncenter, p.aligncenter {
+img.centered, img.aligncenter, p.aligncenter, iframe.centered {
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -4,7 +4,6 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" dir="ltr" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js eq-ie9" dir="ltr" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" dir="ltr" lang="en"> <!--<![endif]-->
-<html>
 
   {% include head.html %}
 
@@ -15,7 +14,7 @@
         {{ content }}      
     </div><!-- end content -->
 
-    {% include footer.html latex=page.latex %}
+    {% include footer.html latex=page.latex d3=page.d3 nvd3=page.nvd3 %}
 
   </body>
 </html>
