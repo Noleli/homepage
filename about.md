@@ -9,9 +9,9 @@ Hi, I'm Noah.
 
 My interests range from traditional Human--Computer Interaction --- that is, creating usable, enjoyable interfaces through research and design --- to ubiquitous, pervasive, and urban computing, to the sociological impacts of technologically-mediated communication in all its forms. These include how social norms emerge in mediated environments as well as how those new normative behaviors affect offline behavior in social contexts. Additionally, I am interested in user interfaces for audio production.
 
-Current projects include studying the similarity between people's words in text-based communication, and how we can apply computational models of human auditory perception to the design of smarter user interfaces for mixing multitrack audio.
-
 I hope my work will shed light on how networked/&#8203;pervasive/&#8203;public/&#8203;personal/&#8203;mobile computing and communication impacts behavior within and outside those systems, both individually and collectively.
+
+Current projects include studying the similarity between people's words in text-based communication, and how we can apply computational models of human auditory perception to the design of smarter user interfaces for mixing multitrack audio.
 
 I have a Master’s in [HCI](http://www.si.umich.edu/academics/msi/human-computer-interaction-hci) from the [University of Michigan](http://www.umich.edu/) [School of Information](http://www.si.umich.edu/). My undergraduate work was in <a title="U of M EECS" href="http://www.eecs.umich.edu/">electrical engineering</a> (signal processing and communications systems), also at the University of Michigan. The transition from the purely technical, through technology at the individual level (traditional HCI), to technology at the cultural and societal levels was unexpected, but awesome.
 
