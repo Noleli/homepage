@@ -86,6 +86,10 @@ a
 	padding-right: 1em;
 }
 
+#content ol {
+    margin-bottom: 15px;
+}
+
 .no-svg #content ul, .no-js #content ul
 {
 	list-style: url('../images/ui/bullet.png');
