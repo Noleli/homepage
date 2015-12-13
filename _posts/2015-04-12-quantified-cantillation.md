@@ -3,7 +3,8 @@
 title: Quantified cantillation
 ---
 
-> Second post: [Word counts]({% post_url 2015-04-17-quantified-cantillation-ii-word-counts %})
+> Second post: [Word counts]({% post_url 2015-04-17-quantified-cantillation-ii-word-counts %})  
+> Third post: [Sequence Explorer]({% post_url 2015-12-13-quantified-cantillation-iii-trop-sequence-explorer %})
 
 When read publicly, the [Torah](https://en.wikipedia.org/wiki/Torah) is often sung using a system of [cantillation marks](https://en.wikipedia.org/wiki/Cantillation), or *trop* in Yiddish. There are many different cantillation marks, each of which has a name, a unique sound (or sounds), and comes in combination with other *trop*.
 
