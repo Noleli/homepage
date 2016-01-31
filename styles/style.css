@@ -191,6 +191,10 @@ section.research img
 	border: 1px solid #DAD9D8;
 }
 
+section.research h2 {
+    line-height: 18px;
+}
+
 #content section.research div p.collaborators
 {
 	font-size: 13px;
