@@ -96,7 +96,7 @@ window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https
   <noscript><a href="https://www.olark.com/site/7759-510873-10-8818/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript><!- end olark code -->
 
   <!-- begin olark code -->
-  <script type="text/javascript" async>
+  <!--<script type="text/javascript" async>
   ;(function(o,l,a,r,k,y){if(o.olark)return;
   r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0];
   y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r);
@@ -108,10 +108,10 @@ window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https
   })(window,document,"static.olark.com/jsclient/loader.js");
   /* Add configuration calls below this comment */
   olark.identify('7759-510873-10-8818');</script>
-  <!-- end olark code -->
+  <!- end olark code ->
   
   <script type="text/javascript">
-    // olark.configure('system.start_hidden', true);
+    olark.configure('system.start_hidden', true);
     olark('api.chat.onOperatorsAvailable', function(){ insertOlark("Live chat – online!"); });
     olark('api.chat.onOperatorsAway', function(){ insertOlark("Live chat – offline"); });
   
@@ -130,6 +130,6 @@ window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https
       $('#habla_wcsend_input').focus();
       return false;
     }
-  </script>
+  </script>-->
   
 {% endif %}

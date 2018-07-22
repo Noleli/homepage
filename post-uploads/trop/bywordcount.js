@@ -29,9 +29,9 @@ function doTheGraphThing() {
         // console.log(d3.select(chartElt));
         var thesvg = d3.select(chartElt).append("svg:svg");
         var thedatums = thesvg.datum(thedata);
-        console.log(thedatums);
+        // console.log(thedatums);
         // console.log(chart);
-        console.log(thedatums.call(chart));
+        thedatums.call(chart);
         nv.utils.windowResize(chart.update);
 
 
