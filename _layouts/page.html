@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<h1>{{page.title}}</h1>
-{{ content }}
-<div id="bottom_nav">
-  <div class="bottom_dot">■</div>
+<div id="{{ page.title | slugify }}">
+    <h1>{{page.title}}</h1>
+    {{ content }}
+    <div id="bottom_nav">
+      <div class="bottom_dot">■</div>
+    </div>
 </div>

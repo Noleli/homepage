@@ -115,19 +115,28 @@ a
 	margin-bottom: 6px;
 }
 
-#content table, #content table tr th
+#content table
 {
   border: 2px solid #949494;
 }
 
-#content table tr td
+#content table tr th {
+    border-bottom: 2px solid #949494;
+}
+
+#content table tr th.rowHeader {
+    border-right: 2px solid #949494;
+}
+
+#content table tr td, #content table tr th.rowHeader
 {
-  border: 1px solid #949494;
+  border-bottom: 1px solid #949494;
+  border-top: 1px solid #949494;
 }
 
 #content table tr td, #content table tr th
 {
-  padding: 2px;
+  padding: 4px 8px;
 }
 
 
