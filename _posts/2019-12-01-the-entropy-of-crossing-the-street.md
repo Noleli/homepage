@@ -9,21 +9,69 @@ d3: true
 <style>
 #{{ page.title | slugify }} .bigDigit {
   --height: 300px;
-  font-family: 'Helvetica', sans-serif;
   margin-bottom: 15px;
+}
+
+#{{ page.title | slugify }} .digit {
+  font-family: 'Helvetica', sans-serif;
 }
 
 #{{ page.title | slugify }} table .rowHeader .digit {
   --height: 32px;
   vertical-align: top;
 }
+
+#{{ page.title | slugify }} .digitTableContainer {
+  display: flex;
+}
+
+#{{ page.title | slugify }} .digitTableContainer .digit {
+  --height: 200px;
+}
+
+#{{ page.title | slugify }} .digitTableContainer .digit.heatmap .segA,
+#{{ page.title | slugify }} .digitTableContainer .digit.heatmap .segB {
+  --off-color: rgb(204, 0, 0);
+}
+#{{ page.title | slugify }} .digitTableContainer .digit.heatmap .segC {
+  --off-color: rgb(229.5, 0, 0);
+}
+#{{ page.title | slugify }} .digitTableContainer .digit.heatmap .segD,
+#{{ page.title | slugify }} .digitTableContainer .digit.heatmap .segG {
+  --off-color: rgb(178.5, 0, 0);
+}
+#{{ page.title | slugify }} .digitTableContainer .digit.heatmap .segE {
+  --off-color: rgb(102, 0, 0);
+}
+#{{ page.title | slugify }} .digitTableContainer .digit.heatmap .segF {
+  --off-color: rgb(153, 0, 0);
+}
+
+#{{ page.title | slugify }} .digitTableContainer .digit.entropyHeatmap .segA,
+#{{ page.title | slugify }} .digitTableContainer .digit.entropyHeatmap .segB {
+  --off-color: rgb(184.091664, 0, 0);
+}
+#{{ page.title | slugify }} .digitTableContainer .digit.entropyHeatmap .segC {
+  --off-color: rgb(119.593876, 0, 0);
+}
+#{{ page.title | slugify }} .digitTableContainer .digit.entropyHeatmap .segD,
+#{{ page.title | slugify }} .digitTableContainer .digit.entropyHeatmap .segG {
+  --off-color: rgb(224.729179, 0, 0);
+}
+#{{ page.title | slugify }} .digitTableContainer .digit.entropyHeatmap .segE,
+#{{ page.title | slugify }} .digitTableContainer .digit.entropyHeatmap .segF {
+  --off-color: rgb(247.592402, 0, 0);
+}
+
 </style>
 
-As a pedestrian, I'm a fan of those countdown timers that tell you how much time is left when crossing the street. To help make sure crossing signs are visible in bright sun, they usually have a hood that shields the display itself. This has the effect of obscuring part of the display when approaching an intersection at an oblique angle.
+You know those countdown timers at crosswalks? Sometimes when crossing the street, I like to try to guess what number it's on even when I can't see the whole thing (like because I'm approaching the intersection at an oblique angle).
 
-This got me thinking: if I want to know how much time is left, is it better to see the right side of the countdown timer (approaching from the left), or the left side (approaching from the right)? In other words, does the left or right side of the display contain more information?
+![Crosswalk signal countdown timer]({{site.baseurl}}/post-uploads/7-segment-display/signal.png)
 
-These timers use [seven-segment displays](tk). Even if you didn't know they were called seven-segment displays, you see them all over the place. They use seven separate segments, labeled A–G, to create each of the 10 digits from 0–10.
+This got me (over)thinking: if I want to know how much time is left, is it better to see the right side of the countdown timer (approaching from the left), or the left side (approaching from the right)? In other words, does the left or right side of the display contain more information?
+
+These timers use [seven-segment displays](https://en.wikipedia.org/wiki/Seven-segment_display). Even if you didn't know they were called seven-segment displays, you see them all over the place. They use seven separate segments, labeled A–G, to create each of the 10 digits from 0–10.
 
 <div class="digit bigDigit">
   <div class="segment segA on"></div>
@@ -178,11 +226,38 @@ To form each of the ten digits, the seven segments are turned on or off in diffe
         <td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
 </table>
 
-There are \\(2^7 = 128\\) possible combinations of seven segments, only ten of which are our standard digits. Therefore, the seven segments aren't on all turned on an equal number of times over the course of the ten digits.
+Each of the seven segments aren't on all turned on an equal number of times over the course of the ten digits. That means seeing some segments turned on is more probable than others.
 
-TK - sum of above table with a heatmap of segments
+<div class="digitTableContainer">
+  <div class="digit heatmap">
+    <div class="segment segA"></div>
+    <div class="label segA">.8</div>
+    <div class="segment segB"></div>
+    <div class="label segB">.8</div>
+    <div class="segment segC"></div>
+    <div class="label segC">.9</div>
+    <div class="segment segD"></div>
+    <div class="label segD">.7</div>
+    <div class="segment segE"></div>
+    <div class="label segE">.4</div>
+    <div class="segment segF"></div>
+    <div class="label segF">.6</div>
+    <div class="segment segG"></div>
+    <div class="label segG">.7</div>
+  </div>
+  <table>
+    <tr><th></th><th>Number of digits</th></tr>
+    <tr><th>Segment A</th><td>8/10</td></tr>
+    <tr><th>Segment B</th><td>8/10</td></tr>
+    <tr><th>Segment C</th><td>9/10</td></tr>
+    <tr><th>Segment D</th><td>7/10</td></tr>
+    <tr><th>Segment E</th><td>4/10</td></tr>
+    <tr><th>Segment F</th><td>6/10</td></tr>
+    <tr><th>Segment G</th><td>7/10</td></tr>
+  </table>
+</div>
 
-How can we tell which of these seven segments communicates the most information?
+So how can we tell which of these seven segments communicates the most information?
 
 ## Information entropy
 
@@ -192,7 +267,7 @@ Claude Shannon's[^1] concept of entropy from information theory is a good way to
 
 $$H(X) = -\sum_{i = 1}^{n} P(x_i)\log_bP(x_i)$$
 
-Oh no.
+[Oh no](https://webcomicname.com/).
 
 Here's what's that means in the case of a seven-segment display. \\(X\\) is a random variable representing whether a segment is on or off. Since a segment can only have two states, the random variable \\(X\\)'s actual values are either on or off. \\(P\\) is the probability operator, so \\(P(x_i)\\) really means the probability that a segment is on or off. (\\(b\\) is the base of the logarithm. We're going to use 2 because we like bits.)
 
@@ -200,15 +275,42 @@ Let's take segment A as an example. It's on for 8 out of 10 digits, and off for 
 
 Plugging that in,
 
-$$H(A) = -0.8\log_2 0.8 - 0.2\log_2 0.2 = 0.722$$
+$$H(A) = -0.8 \log_2 0.8 - 0.2 \log_2 0.2 = 0.722$$
 
 In Shannon's terms, there are **0.722 bits** of information communicated by segment A of a seven-segment display.
 
 Doing this for all seven segments, we get these entropy values:
 
-TK - table of entropy values with heatmap
+<div class="digitTableContainer">
+  <div class="digit entropyHeatmap">
+    <div class="segment segA"></div>
+    <div class="label segA">.72</div>
+    <div class="segment segB"></div>
+    <div class="label segB">.72</div>
+    <div class="segment segC"></div>
+    <div class="label segC">.47</div>
+    <div class="segment segD"></div>
+    <div class="label segD">.88</div>
+    <div class="segment segE"></div>
+    <div class="label segE">.97</div>
+    <div class="segment segF"></div>
+    <div class="label segF">.97</div>
+    <div class="segment segG"></div>
+    <div class="label segG">.88</div>
+  </div>
+  <table>
+    <tr><th></th><th>Shannon entropy</th></tr>
+    <tr><th>Segment A</th><td>0.721928</td></tr>
+    <tr><th>Segment B</th><td>0.721928</td></tr>
+    <tr><th>Segment C</th><td>0.468996</td></tr>
+    <tr><th>Segment D</th><td>0.881291</td></tr>
+    <tr><th>Segment E</th><td>0.970951</td></tr>
+    <tr><th>Segment F</th><td>0.970951</td></tr>
+    <tr><th>Segment G</th><td>0.881291</td></tr>
+  </table>
+</div>
 
-It sure looks like segments E and F carry the most information. That's expected because they're the closest to being on/off 50% of the time. Guess it's better to approach an intersection from the right in order to see the left-hand segments.
+It sure looks like segments E and F carry the most information. That makes sense because they're the closest to being on/off 50% of the time. Guess it's better to approach an intersection from the right in order to see the left-hand segments.
 
 But wait.
 
@@ -222,7 +324,7 @@ Working out the entropy for these, we get **1.16 bits** of information in joint 
 
 But wait!
 
-When was the last time you walked up to an intersection and only saw the timer on one number? If you look for at least half a second (on average), you'll see it count down. Luckily, [Wikipedia says](https://en.wikipedia.org/wiki/Entropy_(information_theory)#Data_as_a_Markov_process) that
+When was the last time you walked up to an intersection and only saw the timer on one number? If you look for at least half a second (on average), you'll see it tick down. Luckily, [Wikipedia says](https://en.wikipedia.org/wiki/Entropy_(information_theory)#Data_as_a_Markov_process) that
 
 > For a first-order Markov source (one in which the probability of selecting a character is dependent only on the immediately preceding character), the entropy rate is:
 
@@ -247,6 +349,19 @@ class {{ page.title | slugify | capitalize | replace: "-", "" }} {
   constructor(container) {
     this.container = container;
     this.segmentDigitTable =  this.container.select(".segmentDigitTable");
+
+    this.digits = {
+        0: [1, 1, 1, 1, 1, 1, 0],
+        1: [0, 1, 1, 0, 0, 0, 0],
+        2: [1, 1, 0, 1, 1, 0, 1],
+        3: [1, 1, 1, 1, 0, 0, 1],
+        4: [0, 1, 1, 0, 0, 1, 1],
+        5: [1, 0, 1, 1, 0, 1, 1],
+        6: [1, 0, 1, 1, 1, 1, 1],
+        7: [1, 1, 1, 0, 0, 0, 0],
+        8: [1, 1, 1, 1, 1, 1, 1],
+        9: [1, 1, 1, 1, 0, 1, 1]
+    };
   }
 }
 let {{ page.title | slugify | replace: "-", "" }} = new {{ page.title | slugify | capitalize | replace: "-", "" }}(d3.select("#{{ page.title | slugify }}"));
