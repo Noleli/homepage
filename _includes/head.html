@@ -14,4 +14,16 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <script src="{{site.assets}}/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="/{{site.baseurl}}js/plugins.js"></script>
+      <script type="text/javascript" src="/{{site.baseurl}}js/plaintext.js"></script>
+
+{% if include.d3 %}
+    <script type="text/javascript" src="{{site.assets}}/d3/d3.min.js" charset="utf-8"></script>
+{% endif %}
+
+{% if include.nvd3 %}
+    <link rel="stylesheet" type="text/css" href="{{site.assets}}/nvd3/nv.d3.min.css">
+    <script type="text/javascript" src="{{site.assets}}/nvd3/nv.d3.min.js" charset="utf-8"></script>
+{% endif %}
 </head>
