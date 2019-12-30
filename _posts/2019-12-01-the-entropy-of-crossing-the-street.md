@@ -90,7 +90,7 @@ d3: true
 
 You know those countdown timers at crosswalks? Sometimes when crossing the street, I like to try to guess what number it's on even when I can't see the whole thing (like when approaching the intersection at an oblique angle).
 
-![Crosswalk signal countdown timer]({{site.baseurl}}/post-uploads/7-segment-display/signal.jpg)
+[![Crosswalk signal countdown timer]({{site.baseurl}}/post-uploads/7-segment-display/signal.jpg)](https://www.flickr.com/photos/thisisbossi/3361602602/)
 
 This got me (over)thinking: if I want to know how much time is left, is it better to see the right side of the countdown timer (approaching from the left), or the left side (approaching from the right)? In other words, does the left or right side of the display carry more information?
 
