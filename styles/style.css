@@ -126,6 +126,7 @@ a
 
 #content table tr th.rowHeader {
     border-right: 2px solid #949494;
+    text-align: left;
 }
 
 #content table tr td, #content table tr th.rowHeader
@@ -137,6 +138,11 @@ a
 #content table tr td, #content table tr th
 {
   padding: 4px 8px;
+}
+
+#content table tr td.num, #content table tr th.num
+{
+  text-align: right;
 }
 
 
