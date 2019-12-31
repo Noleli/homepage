@@ -16,7 +16,11 @@
     <script src="{{site.assets}}/jquery-1.7.1.min.js"></script>
 
     <script type="text/javascript" src="/{{site.baseurl}}js/plugins.js"></script>
-      <script type="text/javascript" src="/{{site.baseurl}}js/plaintext.js"></script>
+    <script type="text/javascript" src="/{{site.baseurl}}js/plaintext.js"></script>
+
+    {% if page.image %}
+    <meta property="og:image" content="{{site.url}}{{page.image}}">
+    {% endif %}
 
 {% if include.d3 %}
     <script type="text/javascript" src="{{site.assets}}/d3/d3.min.js" charset="utf-8"></script>

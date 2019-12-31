@@ -2,6 +2,7 @@
 title: "Entropic Timer: The Information Entropy of Crossing the Street"
 latex: true
 d3: true
+image: "/post-uploads/7-segment-display/post.png"
 ---
 
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/post-uploads/7-segment-display/7-segment-display.css">
@@ -681,7 +682,7 @@ Now it's just a matter of an inelegant nested `for` loop to determine that the f
 
 So, if you can manage to stare at either the left or right segments for a whole second, you're still better off looking at the left segments, but not by much.
 
-I'll leave figuring out the entropy rates for looking at it longer as an exercise for the reader.
+I'll leave figuring out the entropy rates for looking at it longer as an exercise for the reader, because I'm done overthinking this (for now).
 
 ---
 
