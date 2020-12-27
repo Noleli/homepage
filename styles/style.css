@@ -44,7 +44,7 @@ a
 	font-family: "Georgia", "Palatino", "Times New Roman", serif;
 }
 
-#content p, #content blockquote, #content ul
+#content p, #content blockquote, #content ul, #content ol
 {
 	
 	font-size: 15px;
@@ -109,7 +109,8 @@ a
 	padding-top: 2px;
 }
 
-#content ul li
+#content ul li,
+#content ol li
 {
 	line-height: 18px;
 	margin-bottom: 6px;
@@ -143,6 +144,10 @@ a
 #content table tr td.num, #content table tr th.num
 {
   text-align: right;
+}
+
+#content h2 {
+    margin-bottom: 4px;
 }
 
 
