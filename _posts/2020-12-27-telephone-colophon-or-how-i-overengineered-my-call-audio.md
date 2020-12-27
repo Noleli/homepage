@@ -18,7 +18,8 @@ Plus, when working from home for a microphone company, it's pretty common to use
 
 This post explains the setup I've been using for my calls.
 
-![desk with mic, headphones, and speakers]({{site.baseurl}}/post-uploads/call-audio-routing/setup.jpg)
+![desk with mic, headphones, and speakers]({{site.baseurl}}/post-uploads/call-audio-routing/setup.jpg)  
+(Don't let the speakers fool you. Use headphones or it'll feed back when echo cancellation is turned off!)
 
 Ingredients:
 
@@ -100,6 +101,8 @@ Instead, send it directly to the USB interface's out.
 ![zoom monitor routing]({{site.baseurl}}/post-uploads/call-audio-routing/zoom-monitor-routing-callout.png)
 
 And that's it for the DAW.
+
+![reaper's mixer]({{site.baseurl}}/post-uploads/call-audio-routing/reaper-mixer.png)
 
 ## Set up Zoom
 
