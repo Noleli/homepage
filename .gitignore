@@ -4,3 +4,4 @@ _site
 post-uploads/.DS_Store
 */.DS_Store
 \.DS_Store
+.jekyll-cache

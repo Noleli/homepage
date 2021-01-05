@@ -8,6 +8,8 @@ assets: //assets.noahliebman.net
 permalink: /:year/:month/:title/
 paginate: 10
 debug: false
+plugins:
+    - jekyll-paginate
 
 defaults:
   - 
