@@ -42,7 +42,7 @@ The goals are:
 
 The key ingredient here is [BlackHole](https://github.com/ExistentialAudio/BlackHole), a virtual audio driver that acts as a passthrough from each input to the corresponding output[^loopback].
 This actually needs two instances of BlackHole because Zoom can only send and receive from the first two channels of any audio interface.
-Fortunately, they have [nice instructions](https://github.com/ExistentialAudio/BlackHole/wiki/Running-Multiple-BlackHole-Drivers) for getting that going.
+Fortunately, they offer [direct downloads](https://existential.audio/blackhole/) (email required) of each (and have [nice instructions](https://github.com/ExistentialAudio/BlackHole/wiki/Running-Multiple-BlackHole-Drivers) for building from source).
 I have one called BlackHole 16ch and one called BlackHole 2ch, which --- surprise --- have 16 channels and 2 channels, respectively.
 
 The 16-channel BlackHole device will function as the Zoom speaker; the 2-channel BlackHole will be the Zoom "microphone".
@@ -135,4 +135,4 @@ So the far side of a Zoom call comes in on channels 1 and 2, and system sound on
 And that's it.
 Happy calling!
 
-[^loopback]: I used BlackHole because it's free and did what I needed. You can achieve the same thing much more easily with a nice UI using [Loopback](https://rogueamoeba.com/loopback/) from the excellent Rogue Amoeba.
+[^loopback]: I used BlackHole because it's free and did what I needed. You can achieve the same thing with a nice UI using [Loopback](https://rogueamoeba.com/loopback/) from the excellent Rogue Amoeba.
