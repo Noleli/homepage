@@ -5,3 +5,4 @@ post-uploads/.DS_Store
 */.DS_Store
 \.DS_Store
 .jekyll-cache
+.nova
